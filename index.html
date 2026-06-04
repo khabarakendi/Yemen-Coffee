@@ -1,369 +1,267 @@
+أتفهم تماماً رغبتك في الحصول على حل جاهز وسريع لا يتطلب أي خبرة برمجية. أفضل وأسهل طريقة لرفع موقع مجاني يعمل فوراً على GitHub دون تعقيدات هي استخدام ملف واحد يجمع بين التصميم (Tailwind CSS) والمحتوى (HTML) ليعمل مباشرة كصفحة هبوط (Landing Page).
+
+لقد قمت بتجهيز الموقع كاملاً باللغة العربية، وبتصميم متجاوب يعمل على الجوال والكمبيوتر، ويحتوي على ألوان الهوية الفاخرة (الأسود، البني، الذهبي).
+
+### خطوات التشغيل في GitHub (في 3 دقائق):
+
+1. سجل الدخول إلى حسابك في **GitHub** واضغط على زر **New** لإنشاء مستودع جديد (Repository).
+2. اكتب اسم المستودع (مثلاً: `yemen-coffee-b2b`).
+3. انزل للأسفل واضغط على **Create repository**.
+4. في الصفحة التالية، اضغط على الرابط **creating a new file**.
+5. في خانة اسم الملف بالأعلى، اكتب بالضبط: `index.html`
+6. انسخ الكود الموجود بالأسفل بالكامل، والصقه في المربع الأبيض الكبير.
+7. اضغط على الزر الأخضر بالأعلى **Commit changes**.
+8. لتشغيل الموقع، اذهب إلى إعدادات المستودع **Settings** (في الشريط العلوي)، ثم من القائمة الجانبية اختر **Pages**.
+9. تحت كلمة Branch، قم بتغيير `None` إلى `main` ثم اضغط **Save**.
+10. انتظر دقيقة واحدة، وقم بتحديث الصفحة لتجد رابط موقعك جاهزاً ويعمل!
+
+---
+
+### الكود الكامل (انسخه بالكامل):
+
+```html
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" style="scroll-behavior: smooth;">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yemen Heritage Coffee | مورد البن اليمني بالجملة B2B</title>
-  <meta name="description" content="توريد البن اليمني المختص بكميات الجملة إلى المحامص والمستوردين. حبوب خضراء أو محمصة – طلب عينات وRFQ مباشر.">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    /* CSS الأساسي (يمكن نقله إلى ملف منفصل) */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #0A0A0A;
-      color: #EAEAEA;
-      line-height: 1.6;
-    }
-
-    h1, h2, h3, .serif {
-      font-family: 'Playfair Display', serif;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    /* شريط التنقل */
-    .navbar {
-      background: rgba(10, 10, 10, 0.95);
-      padding: 20px 0;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 1000;
-      border-bottom: 1px solid #C7A03C;
-    }
-
-    .nav-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: #C7A03C;
-      text-decoration: none;
-      font-family: 'Playfair Display', serif;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 30px;
-    }
-
-    .nav-links a {
-      color: #EAEAEA;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    .nav-links a:hover, .nav-links a.active {
-      color: #C7A03C;
-    }
-
-    /* بطل الصفحة (Hero) */
-    .hero {
-      height: 100vh;
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover fixed;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      margin-top: 80px;
-    }
-
-    .hero-content {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .hero h1 {
-      font-size: 3.5rem;
-      color: #C7A03C;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-    }
-
-    .btn-group {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      padding: 12px 32px;
-      font-weight: 600;
-      border-radius: 4px;
-      text-decoration: none;
-      transition: all 0.3s;
-      display: inline-block;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    .btn-gold {
-      background: #C7A03C;
-      color: #0A0A0A;
-      border: 1px solid #C7A03C;
-    }
-
-    .btn-gold:hover {
-      background: #E8C96A;
-      border-color: #E8C96A;
-      transform: translateY(-3px);
-    }
-
-    .btn-outline {
-      border: 1px solid #C7A03C;
-      color: #C7A03C;
-      background: transparent;
-    }
-
-    .btn-outline:hover {
-      background: #C7A03C;
-      color: #0A0A0A;
-    }
-
-    /* أقسام عامة */
-    section {
-      padding: 80px 0;
-    }
-
-    .section-title {
-      font-size: 2.5rem;
-      text-align: center;
-      margin-bottom: 50px;
-      color: #C7A03C;
-    }
-
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-    }
-
-    .card {
-      background: #3B2A1F;
-      border-radius: 12px;
-      overflow: hidden;
-      transition: transform 0.3s, box-shadow 0.3s;
-      border-bottom: 2px solid #C7A03C;
-    }
-
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 20px 30px rgba(0,0,0,0.5);
-    }
-
-    .card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .card-content {
-      padding: 20px;
-    }
-
-    .card h3 {
-      color: #C7A03C;
-      margin-bottom: 10px;
-    }
-
-    .flavor-tags span {
-      display: inline-block;
-      background: #0A0A0A;
-      padding: 4px 12px;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      margin: 5px 5px 0 0;
-    }
-
-    /* مقارنة */
-    .comparison {
-      background: #1A1A1A;
-      border-radius: 20px;
-      padding: 30px;
-      overflow-x: auto;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    th, td {
-      padding: 15px;
-      text-align: right;
-      border-bottom: 1px solid #3B2A1F;
-    }
-
-    th {
-      color: #C7A03C;
-      font-weight: 600;
-    }
-
-    /* تذييل */
-    .footer {
-      background: #050505;
-      padding: 50px 0 20px;
-      border-top: 1px solid #C7A03C;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 40px;
-      margin-bottom: 40px;
-    }
-
-    .footer a {
-      color: #EAEAEA;
-      text-decoration: none;
-    }
-
-    .footer a:hover {
-      color: #C7A03C;
-    }
-
-    .whatsapp-float {
-      position: fixed;
-      bottom: 30px;
-      left: 30px;
-      background: #25D366;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 30px;
-      color: white;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      transition: 0.3s;
-      z-index: 99;
-    }
-
-    .whatsapp-float:hover {
-      transform: scale(1.1);
-    }
-
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 2rem; }
-      .nav-links { display: none; } /* سيتم إضافة قائمة هامبرغر مع JS */
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مورد البن اليمني - لتوريد الجملة والمحامص</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        onyx: '#1A1A1A',
+                        espresso: '#4A3525',
+                        gold: '#C5A059',
+                        offwhite: '#F9F6F0'
+                    },
+                    fontFamily: {
+                        sans: ['Tajawal', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
+<body class="font-sans bg-offwhite text-onyx selection:bg-gold selection:text-onyx">
 
-  <nav class="navbar">
-    <div class="container nav-container">
-      <a href="#" class="logo">Yemen Heritage Coffee</a>
-      <div class="nav-links">
-        <a href="#" class="active">الرئيسية</a>
-        <a href="#">أنواع البن</a>
-        <a href="#">القصة</a>
-        <a href="#">B2B</a>
-        <a href="#">طلب عينة</a>
-        <a href="#">اتصل</a>
-      </div>
+    <div class="bg-onyx text-white py-2 text-sm text-center">
+        <span>للتواصل المباشر مع المبيعات:</span>
+        <a href="https://wa.me/905394780930" class="text-gold font-bold mx-2" target="_blank">00905394780930</a> | 
+        <a href="mailto:itlobni@gmail.com" class="text-gold font-bold mx-2">itlobni@gmail.com</a>
     </div>
-  </nav>
 
-  <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="hero-content container">
-        <h1>توريد البن اليمني المباشر<br>من المزرعة إلى المحمصة</h1>
-        <p>نعمل مباشرة مع مزارعي الجبال العالية – حبوب خضراء أو محمصة حسب الطلب، بكميات الجملة. لا نبيع تجزئة، فقط B2B.</p>
-        <div class="btn-group">
-          <a href="#" class="btn btn-gold">طلب عينة مجانية</a>
-          <a href="#" class="btn btn-outline">احصل على عرض سعر</a>
+    <nav class="bg-espresso text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gold tracking-wider">YEMEN COFFEE B2B</div>
+            <div class="hidden md:flex space-x-8 space-x-reverse font-medium">
+                <a href="#home" class="hover:text-gold transition">الرئيسية</a>
+                <a href="#varieties" class="hover:text-gold transition">المحاصيل</a>
+                <a href="#b2b" class="hover:text-gold transition">توريد الجملة</a>
+                <a href="#story" class="hover:text-gold transition">قصتنا</a>
+            </div>
+            <a href="#contact" class="bg-gold text-onyx px-5 py-2 font-bold rounded hover:bg-white transition hidden md:block">طلب عينة</a>
         </div>
-      </div>
+    </nav>
+
+    <header id="home" class="relative bg-cover bg-center h-[80vh] flex items-center" style="background-image: url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+        <div class="absolute inset-0 bg-onyx bg-opacity-70"></div>
+        <div class="relative container mx-auto px-6 z-10 text-white">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4 leading-tight">توريد البن اليمني المباشر <br> <span class="text-gold">من المزرعة إلى المحمصة</span></h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl leading-relaxed">نحن نوفر أعرق حبوب البن الأخضر اليمني وأكثرها تعقيداً. نربط مزارع المرتفعات اليمنية مباشرة بمحامص القهوة المختصة ومستوردي الجملة حول العالم.</p>
+            <div class="flex gap-4">
+                <a href="#contact" class="bg-gold text-onyx px-8 py-3 font-bold text-lg rounded hover:bg-white transition shadow-lg">اطلب تسعيرة الآن</a>
+                <a href="#varieties" class="border-2 border-gold text-gold px-8 py-3 font-bold text-lg rounded hover:bg-gold hover:text-onyx transition">تصفح المحاصيل</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="varieties" class="py-20 bg-offwhite">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-espresso mb-12">محاصيلنا من البن اليمني</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-gold hover:shadow-xl transition">
+                    <h3 class="text-2xl font-bold text-onyx mb-2">قهوة حراز (Haraz)</h3>
+                    <p class="text-gray-600 mb-4 text-sm">تُزرع في جبال حراز التاريخية بطرق زراعية متوارثة.</p>
+                    <ul class="text-sm space-y-2 mb-4">
+                        <li><strong>الإيحاءات:</strong> تفاح، توت، زهور، شوكولاتة داكنة</li>
+                        <li><strong>القوام:</strong> متوسط إلى ممتلئ</li>
+                        <li><strong>المعالجة:</strong> مجفف طبيعياً (Sun-dried)</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-gold hover:shadow-xl transition">
+                    <h3 class="text-2xl font-bold text-onyx mb-2">قهوة يافع (Yafa)</h3>
+                    <p class="text-gray-600 mb-4 text-sm">تتميز بطبيعة وعرة تمنح البن حلاوة مكثفة وقواماً ثقيلاً.</p>
+                    <ul class="text-sm space-y-2 mb-4">
+                        <li><strong>الإيحاءات:</strong> عسل، فواكه ذات نواة، مكسرات محمصة</li>
+                        <li><strong>القوام:</strong> ثقيل وشرابي (Syrupy)</li>
+                        <li><strong>المعالجة:</strong> مجفف طبيعياً</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-gold hover:shadow-xl transition">
+                    <h3 class="text-2xl font-bold text-onyx mb-2">قهوة إسماعيلي (Ismaili)</h3>
+                    <p class="text-gray-600 mb-4 text-sm">من أشهر الأسماء في عالم البن اليمني، تتميز بحباتها الدائرية الصغيرة.</p>
+                    <ul class="text-sm space-y-2 mb-4">
+                        <li><strong>الإيحاءات:</strong> فراولة، نبيذ، كاكاو داكن</li>
+                        <li><strong>القوام:</strong> مخملي</li>
+                        <li><strong>المعالجة:</strong> مجفف طبيعياً</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-gold hover:shadow-xl transition">
+                    <h3 class="text-2xl font-bold text-onyx mb-2">قهوة مطري (Matari)</h3>
+                    <p class="text-gray-600 mb-4 text-sm">قهوة الملوك تاريخياً، توفر قاعدة شوكولاتية عميقة مع بهارات برية.</p>
+                    <ul class="text-sm space-y-2 mb-4">
+                        <li><strong>الإيحاءات:</strong> شوكولاتة، بهارات غريبة، نبيذ أحمر</li>
+                        <li><strong>القوام:</strong> غني وممتلئ</li>
+                        <li><strong>المعالجة:</strong> مجفف طبيعياً</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-gold hover:shadow-xl transition">
+                    <h3 class="text-2xl font-bold text-onyx mb-2">قهوة شبام (Shibam)</h3>
+                    <p class="text-gray-600 mb-4 text-sm">جوهرة مخفية تقدم قهوة متسقة للغاية بخصائص الفواكه المجففة.</p>
+                    <ul class="text-sm space-y-2 mb-4">
+                        <li><strong>الإيحاءات:</strong> تين مجفف، زبيب، دبس السكر</li>
+                        <li><strong>القوام:</strong> ناعم وكريمي</li>
+                        <li><strong>المعالجة:</strong> مجفف طبيعياً</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
     </section>
 
-    <!-- Why Yemeni Coffee + Comparison -->
-    <section class="container">
-      <h2 class="section-title">لماذا البن اليمني تحديداً؟</h2>
-      <div class="grid-3" style="margin-bottom: 50px;">
-        <div class="card"><div class="card-content"><h3>◉ أقدم تراث</h3><p>سلالات نادرة (إسماعيلي، حراز، مطري) يعود تاريخها لـ 500 عام.</p></div></div>
-        <div class="card"><div class="card-content"><h3>◉ زراعة جبلية عضوية</h3><p>مصاطب حجرية بدون أسمدة كيماوية أو ري صناعي.</p></div></div>
-        <div class="card"><div class="card-content"><h3>◉ نكهات استثنائية</h3><p>شوكولاتة، فواكه مجففة، توابل، زهور – لا تضاهى.</p></div></div>
-      </div>
-      <div class="comparison">
-        <h3 style="color:#C7A03C; margin-bottom:20px;">مقارنة سريعة مع أصول أخرى</h3>
-        <table>
-          <thead><tr><th>الخاصية</th><th>البن اليمني</th><th>الإثيوبي</th><th>البرازيلي</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>النكهات</td><td>ترابية، توابل، فواكه</td><td>زهرية، حامضية</td><td>جوزية، شوكولاتة</td></tr>
-            <tr><td>التجفيف</td><td>طبيعي شمسي على الثمرة</td><td>مغسول / طبيعي</td><td>طبيعي / مغسول</td></tr>
-            <tr><td>الندرة</td><td>عالية جداً (إنتاج محدود)</td><td>متوسطة</td><td>منخفضة (تجاري)</td></tr>
-            <tr><td>سعر الجملة</td><td>ممتاز (Premium)</td><td>جيد</td><td>اقتصادي</td></tr>
-          </tbody>
-        </table>
-      </div>
+    <section id="b2b" class="py-20 bg-onyx text-white">
+        <div class="container mx-auto px-6 lg:flex lg:items-center lg:gap-12">
+            <div class="lg:w-1/2 mb-10 lg:mb-0">
+                <h2 class="text-4xl font-bold text-gold mb-6">لوجستيات وتوريد الجملة (B2B)</h2>
+                <p class="text-gray-300 mb-6 leading-relaxed">نحن نفهم احتياجات مديري المشتريات والمحامص المختصة. نضمن لك الشفافية في المعالجة، الجودة الثابتة، وسهولة الإجراءات اللوجستية وتخليص الجمارك.</p>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3"><span class="w-2 h-2 bg-gold rounded-full"></span> <strong>العينات (Samples):</strong> من 2 كجم إلى 5 كجم (لاختبارات الحمص والتذوق).</li>
+                    <li class="flex items-center gap-3"><span class="w-2 h-2 bg-gold rounded-full"></span> <strong>الطلبات الصغرى (Micro-lots):</strong> من 20 كجم إلى 50 كجم للمحامص المتخصصة.</li>
+                    <li class="flex items-center gap-3"><span class="w-2 h-2 bg-gold rounded-full"></span> <strong>طلبات الجملة (Bulk):</strong> 100 كجم فأكثر للحاويات التجارية.</li>
+                    <li class="flex items-center gap-3"><span class="w-2 h-2 bg-gold rounded-full"></span> <strong>الشحن:</strong> يتوفر شحن جوي للطلبات العاجلة وشحن بحري للكميات الكبيرة.</li>
+                </ul>
+            </div>
+            <div class="lg:w-1/2 bg-espresso p-8 rounded-lg border border-gray-700 shadow-2xl text-center">
+                <h3 class="text-2xl font-bold mb-4">جاهزون لتلبية احتياجاتك</h3>
+                <p class="text-sm text-gray-300 mb-6">قدرات توريد تصل إلى أطنان شهرياً بحسب مواسم الحصاد. جميع أوراق التصدير وشهادات المنشأ متوفرة.</p>
+                <a href="#contact" class="inline-block bg-gold text-onyx px-8 py-3 font-bold rounded hover:bg-white transition w-full">طلب قائمة الأسعار (RFQ)</a>
+            </div>
+        </div>
     </section>
 
-    <!-- نموذج سريع للعينة (اختصار) - سيتم تفصيله في صفحة منفصلة -->
-    <section style="background:#1A1A1A;">
-      <div class="container" style="text-align:center;">
-        <h2 class="section-title">جاهز لبدء الشراكة؟</h2>
-        <p style="margin-bottom:30px;">اطلب عينة تجارية من البن اليمني واختبر الجودة بنفسك في محمصتك.</p>
-        <a href="#" class="btn btn-gold" style="background:#C7A03C;">اذهب إلى طلب العينة ←</a>
-      </div>
+    <section id="story" class="py-20 bg-offwhite">
+        <div class="container mx-auto px-6 text-center max-w-4xl">
+            <h2 class="text-4xl font-bold text-espresso mb-6">قصتنا: إرث زراعي يمتد لقرون</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                البن اليمني ليس مجرد محصول، بل هو جينات القهوة الأصلية (Arabica Typica). يُزرع البن في مدرجات جبلية شاهقة تصل لارتفاع 2500 متر. نقوم بدعم المزارعين المحليين عبر التجارة المباشرة (Direct Trade)، لضمان حصولهم على أجور عادلة تشجعهم على الاستمرار. 
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                يتم قطف الكرز الأحمر يدوياً فقط، وتجفيفه تحت أشعة الشمس على أسرة مرتفعة لأسابيع لضمان امتصاص حبة البن لسكريات القشرة، مما يمنح البن اليمني تعقيده النكهي الفريد الذي لا مثيل له في العالم.
+            </p>
+        </div>
     </section>
-  </main>
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <h3 style="color:#C7A03C;">Yemen Heritage</h3>
-        <p>توريد B2B للبن اليمني المختص – منذ 1978.</p>
-      </div>
-      <div>
-        <h4>روابط سريعة</h4>
-        <p><a href="#">أنواع البن</a></p>
-        <p><a href="#">B2B Supply</a></p>
-        <p><a href="#">طلب عينة</a></p>
-      </div>
-      <div>
-        <h4>اتصل بنا</h4>
-        <p><i class="fas fa-envelope"></i> itlobni@gmail.com</p>
-        <p><i class="fas fa-phone-alt"></i> 00905394780930</p>
-        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/00905394780930">واتساب مباشر</a></p>
-      </div>
-      <div>
-        <h4>شهادات</h4>
-        <p>✓ SCA Member<br>✓ Q-Grader 86 pts<br>✓ تتبع كامل</p>
-      </div>
-    </div>
-    <div class="container" style="text-align:center; border-top:1px solid #3B2A1F; padding-top:20px;">
-      <p>© 2025 Yemen Heritage Coffee – مورد جملة معتمد. جميع الحقوق محفوظة.</p>
-    </div>
-  </footer>
+    <section id="contact" class="py-20 bg-gray-200">
+        <div class="container mx-auto px-6 lg:flex lg:gap-12">
+            
+            <div class="lg:w-1/3 bg-onyx text-white p-8 rounded-lg shadow-lg mb-10 lg:mb-0">
+                <h3 class="text-3xl font-bold text-gold mb-6">تواصل معنا المبيعات</h3>
+                <p class="text-gray-300 mb-8 text-sm">نحن متاحون للرد على استفسارات المستوردين والمحامص على مدار الأسبوع.</p>
+                
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-espresso flex items-center justify-center rounded-full text-gold font-bold">✉</div>
+                        <div>
+                            <p class="text-sm text-gray-400">البريد الإلكتروني</p>
+                            <a href="mailto:itlobni@gmail.com" class="font-bold hover:text-gold transition">itlobni@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-espresso flex items-center justify-center rounded-full text-gold font-bold">☏</div>
+                        <div>
+                            <p class="text-sm text-gray-400">رقم الهاتف / واتساب</p>
+                            <p class="font-bold" dir="ltr">+90 539 478 09 30</p>
+                        </div>
+                    </div>
+                </div>
 
-  <a href="https://wa.me/00905394780930" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <div class="mt-10">
+                    <a href="https://wa.me/905394780930" target="_blank" class="block w-full text-center bg-green-600 text-white px-6 py-3 font-bold rounded hover:bg-green-500 transition shadow-lg">تواصل معنا عبر WhatsApp</a>
+                </div>
+            </div>
 
-  <script>
-    // يمكن إضافة JavaScript للتنقل بين الصفحات لاحقاً
-    console.log("B2B Yemen Coffee ready");
-  </script>
+            <div class="lg:w-2/3 bg-white p-8 rounded-lg shadow-lg border-t-4 border-gold">
+                <h3 class="text-2xl font-bold text-espresso mb-6">طلب عينة / تسعيرة الجملة</h3>
+                <form action="mailto:itlobni@gmail.com" method="POST" enctype="text-plain" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">الاسم بالكامل</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-gold bg-gray-50" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">اسم الشركة / المحمصة</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-gold bg-gray-50" required>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">البريد الإلكتروني</label>
+                            <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-gold bg-gray-50" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">الدولة / ميناء الوصول</label>
+                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-gold bg-gray-50" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">نوع الاهتمام (اختر المحاصيل)</label>
+                        <div class="flex flex-wrap gap-4 text-sm text-gray-700">
+                            <label class="flex items-center gap-2"><input type="checkbox" class="accent-gold"> حراز</label>
+                            <label class="flex items-center gap-2"><input type="checkbox" class="accent-gold"> يافع</label>
+                            <label class="flex items-center gap-2"><input type="checkbox" class="accent-gold"> إسماعيلي</label>
+                            <label class="flex items-center gap-2"><input type="checkbox" class="accent-gold"> مطري</label>
+                            <label class="flex items-center gap-2"><input type="checkbox" class="accent-gold"> شبام</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">الكمية المطلوبة (تقريبياً)</label>
+                        <select class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-gold bg-gray-50">
+                            <option>عينة للتذوق (2 كجم - 5 كجم)</option>
+                            <option>طلبية صغرى (20 كجم - 50 كجم)</option>
+                            <option>طلبية جملة (100 كجم - 500 كجم)</option>
+                            <option>حاوية / كميات كبيرة (+500 كجم)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">تفاصيل إضافية / رسالتك</label>
+                        <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-gold bg-gray-50"></textarea>
+                    </div>
+
+                    <button type="submit" class="bg-onyx text-gold px-8 py-3 font-bold text-lg rounded hover:bg-espresso transition w-full shadow-md">إرسال الطلب</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-onyx text-center py-6 border-t border-gray-800">
+        <p class="text-gray-400 text-sm">© 2024 Yemen Coffee B2B Direct Supply. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
+
+```
