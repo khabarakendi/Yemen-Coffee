@@ -1,3 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الإدريسي لتوريد البن اليمني - Edrisi Coffee B2B</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        onyx: '#1A1A1A',
+                        espresso: '#4A3525',
+                        gold: '#C5A059',
+                        offwhite: '#F9F6F0'
+                    },
+                    fontFamily: {
+                        sans: ['Tajawal', 'sans-serif'],
+                        serif: ['Cinzel', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-offwhite text-onyx selection:bg-gold selection:text-onyx">
+
+    <!-- شريط التواصل العلوي (تم استعادته) -->
+    <div class="bg-onyx text-white py-2 text-sm text-center">
+        <span>للتواصل المباشر مع المبيعات:</span>
+        <a href="https://wa.me/905394780930" class="text-gold font-bold mx-2" target="_blank">00905394780930</a> | 
+        <a href="mailto:itlobni@gmail.com" class="text-gold font-bold mx-2">itlobni@gmail.com</a>
+    </div>
+
+    <!-- القائمة الرئيسية -->
+    <nav class="bg-espresso text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            
+            <!-- الشعار النصي الفاخر -->
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="text-3xl font-serif font-bold text-gold tracking-widest mt-1">Edrisi</div>
+                <div class="text-sm font-medium text-gray-300 border-r-2 border-gold pr-3 mr-1 leading-tight">
+                    الإدريسي<br>للبن المختص
+                </div>
+            </a>
+            
+            <div class="hidden md:flex space-x-8 space-x-reverse font-medium items-center">
+                <a href="index.html" class="hover:text-gold transition text-gold border-b-2 border-gold pb-1">الرئيسية</a>
+                <a href="#story" class="hover:text-gold transition">قصتنا</a>
+                <a href="varieties.html" class="hover:text-gold transition">المحاصيل والتفاصيل</a>
+                <a href="#b2b" class="hover:text-gold transition">توريد الجملة</a>
+                <!-- قسم المنشورات تم استعادته -->
+                <a href="#posts" class="hover:text-gold transition">آخر الأخبار</a>
+            </div>
+            <a href="#contact" class="bg-gold text-onyx px-5 py-2 font-bold rounded hover:bg-white transition hidden md:block">طلب عينة</a>
+        </div>
+    </nav>
+
+    <!-- قسم البطل (Hero Section) -->
+    <header id="home" class="relative bg-cover bg-center h-[90vh] flex items-center" style="background-image: url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+        <div class="absolute inset-0 bg-onyx bg-opacity-70"></div>
+        <div class="relative container mx-auto px-6 z-10 text-white">
+            <span class="text-gold font-serif tracking-widest mb-2 block text-xl">Edrisi Coffee Supply</span>
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 leading-tight">توريد البن اليمني المباشر <br> <span class="text-gold">من المزرعة إلى المحمصة</span></h1>
+            <p class="text-lg md:text-2xl text-gray-300 mb-8 max-w-3xl leading-relaxed">نحن نوفر أعرق حبوب البن الأخضر اليمني وأكثرها تعقيداً. نربط مزارع المرتفعات اليمنية مباشرة بمحامص القهوة المختصة ومستوردي الجملة حول العالم.</p>
+            <div class="flex gap-4">
+                <a href="#contact" class="bg-gold text-onyx px-8 py-4 font-bold text-lg rounded hover:bg-white transition shadow-lg">اطلب تسعيرة الآن</a>
+                <a href="varieties.html" class="border-2 border-gold text-gold px-8 py-4 font-bold text-lg rounded hover:bg-gold hover:text-onyx transition bg-black bg-opacity-30">تصفح الدليل الشامل للمحاصيل</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- قسم القصة (مختصر) -->
+    <section id="story" class="py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-5xl text-center">
+            <h2 class="text-4xl font-bold text-espresso mb-6">قصتنا: إرث زراعي يمتد لقرون</h2>
+            <div class="w-24 h-1 bg-gold mx-auto mb-8"></div>
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                البن اليمني ليس مجرد محصول زراعي عابر، بل هو الحاضنة الوراثية الأولى التي انطلقت منها ثقافة القهوة إلى العالم. يُزرع البن اليمني في مدرجات جبلية حجرية شاهقة ومذهلة، تمتد على ارتفاعات تصل إلى 2500 متر.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                يتم قطف الكرز يدوياً في عملية انتقائية دقيقة، وتتم المعالجة الطبيعية تحت أشعة الشمس الجبلية لأسابيع لضمان امتصاص حبة البن لسكريات القشرة، مما يمنحه تعقيده النكهي الفريد الذي يجمع بين الفواكه المجففة، الشوكولاتة، والبهارات.
+            </p>
+        </div>
+    </section>
+
+    <!-- قسم المحاصيل كبوابات (تم استعادته) -->
+    <section class="py-24 bg-offwhite">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-espresso mb-12">اخترنا لكم أفضل المحاصيل</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                
+                <div class="bg-white p-8 rounded-lg shadow border-t-4 border-gold">
+                    <h3 class="text-2xl font-bold text-onyx mb-3">الحرازي</h3>
+                    <p class="text-gray-600 mb-6">يتميز بانفجار فاكهي معقد، يزرع في ارتفاعات تصل إلى 2400 متر.</p>
+                    <a href="varieties.html#harazi" class="text-gold font-bold hover:text-espresso transition">اقرأ الشرح المفصل ←</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow border-t-4 border-gold">
+                    <h3 class="text-2xl font-bold text-onyx mb-3">الخولاني</h3>
+                    <p class="text-gray-600 mb-6">قوام غني، كريمي، وثقيل جداً مثالي للقهوة العربية والإسبريسو.</p>
+                    <a href="varieties.html#khawlani" class="text-gold font-bold hover:text-espresso transition">اقرأ الشرح المفصل ←</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow border-t-4 border-gold">
+                    <h3 class="text-2xl font-bold text-onyx mb-3">الإسماعيلي</h3>
+                    <p class="text-gray-600 mb-6">أحد أندر الأنواع بحبات البازلاء الصغيرة، بنكهات فاكهية نادرة.</p>
+                    <a href="varieties.html#ismaili" class="text-gold font-bold hover:text-espresso transition">اقرأ الشرح المفصل ←</a>
+                </div>
+            </div>
+            <div class="mt-12">
+                <a href="varieties.html" class="inline-block bg-espresso text-white px-8 py-3 rounded font-bold hover:bg-gold transition">عرض كل الأنواع بالشرح المفصل مع الصور</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم توريد الجملة (B2B Logistics) -->
+    <section id="b2b" class="py-24 bg-onyx text-white">
+        <div class="container mx-auto px-6 lg:flex lg:items-center lg:gap-12 max-w-6xl">
+            <div class="lg:w-1/2 mb-10 lg:mb-0">
+                <h2 class="text-4xl font-bold text-gold mb-8">لوجستيات وتوريد الجملة (B2B)</h2>
+                <p class="text-lg text-gray-300 mb-8 leading-relaxed">نحن نفهم احتياجات مديري المشتريات والمحامص المختصة. نضمن لك الشفافية في المعالجة، الجودة الثابتة، وسهولة الإجراءات وتخليص الجمارك.</p>
+                <ul class="space-y-4 text-lg">
+                    <li class="flex items-center gap-4"><span class="w-3 h-3 bg-gold rounded-full"></span> <strong>العينات:</strong> من 100 جم إلى 150 جم (لاختبارات الحمص).</li>
+                    <li class="flex items-center gap-4"><span class="w-3 h-3 bg-gold rounded-full"></span> <strong>الطلبات الصغرى:</strong> من 20 كجم إلى 50 كجم للمحامص المتخصصة.</li>
+                    <li class="flex items-center gap-4"><span class="w-3 h-3 bg-gold rounded-full"></span> <strong>طلبات الجملة:</strong> 100 كجم فأكثر للحاويات التجارية.</li>
+                    <li class="flex items-center gap-4"><span class="w-3 h-3 bg-gold rounded-full"></span> <strong>الشحن:</strong> شحن بري من اليمن إلى السعودية.</li>
+                </ul>
+            </div>
+            <div class="lg:w-1/2 bg-espresso p-10 rounded-lg border border-gray-700 shadow-2xl text-center">
+                <h3 class="text-3xl font-bold mb-6">جاهزون لتلبية احتياجاتك</h3>
+                <p class="text-lg text-gray-300 mb-8">قدرات توريد تصل إلى أطنان شهرياً بحسب مواسم الحصاد. جميع أوراق التصدير وشهادات المنشأ متوفرة.</p>
+                <a href="#contact" class="inline-block bg-gold text-onyx px-8 py-4 font-bold text-xl rounded hover:bg-white transition w-full shadow-lg">طلب قائمة الأسعار (RFQ)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المنشورات والأخبار (تم استعادته) -->
+    <section id="posts" class="py-24 bg-gray-100">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-4xl font-bold text-center text-espresso mb-16">أحدث المنشورات والأخبار</h2>
+            
+            <div class="bg-white p-10 rounded-lg shadow-md border-r-4 border-gold mb-8">
+                <span class="text-gold font-bold text-sm tracking-widest uppercase">تحديث جديد</span>
+                <h3 class="text-2xl font-bold text-onyx mt-3 mb-4">عنوان المنشور هنا (مثال: وصول محصول حراز الجديد)</h3>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    هنا يمكنك كتابة تفاصيل المنشور، الأخبار، أو العروض التي ترغب بمشاركتها مع عملائك.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل وطلب العينات -->
+    <section id="contact" class="py-24 bg-gray-200">
+        <div class="container mx-auto px-6 lg:flex lg:gap-12 max-w-7xl">
+            <div class="lg:w-1/3 bg-onyx text-white p-10 rounded-lg shadow-xl mb-10 lg:mb-0">
+                <h3 class="text-3xl font-bold text-gold mb-8">تواصل معنا</h3>
+                <div class="space-y-8">
+                    <div class="flex items-center gap-6">
+                        <div class="w-12 h-12 bg-espresso flex items-center justify-center rounded-full text-gold font-bold text-xl">✉</div>
+                        <div>
+                            <p class="text-sm text-gray-400 mb-1">البريد الإلكتروني</p>
+                            <a href="mailto:itlobni@gmail.com" class="font-bold text-lg hover:text-gold transition">itlobni@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <div class="w-12 h-12 bg-espresso flex items-center justify-center rounded-full text-gold font-bold text-xl">☏</div>
+                        <div>
+                            <p class="text-sm text-gray-400 mb-1">واتساب</p>
+                            <p class="font-bold text-lg" dir="ltr">+90 539 478 09 30</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12">
+                    <a href="https://wa.me/905394780930" target="_blank" class="block w-full text-center bg-green-600 text-white px-6 py-4 font-bold text-lg rounded hover:bg-green-500 transition shadow-lg">تواصل عبر WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="lg:w-2/3 bg-white p-10 rounded-lg shadow-xl border-t-4 border-gold">
+                <h3 class="text-3xl font-bold text-espresso mb-8">طلب عينة / تسعيرة الجملة</h3>
+                <form onsubmit="sendToWhatsApp(event)" class="space-y-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-3">الاسم بالكامل</label>
+                            <input type="text" id="wa_name" class="w-full px-5 py-3 border border-gray-300 rounded focus:border-gold bg-gray-50 text-lg" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-3">اسم الشركة / المحمصة</label>
+                            <input type="text" id="wa_company" class="w-full px-5 py-3 border border-gray-300 rounded focus:border-gold bg-gray-50 text-lg" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-3">الكمية المطلوبة</label>
+                        <select id="wa_quantity" class="w-full px-5 py-3 border border-gray-300 rounded focus:border-gold bg-gray-50 text-lg">
+                            <option value="عينة للتذوق (100 جم - 150 جم)">عينة للتذوق (100 جم - 150 جم)</option>
+                            <option value="طلبية صغرى (20 كجم - 50 كجم)">طلبية صغرى (20 كجم - 50 كجم)</option>
+                            <option value="طلبية جملة (100 كجم - 500 كجم)">طلبية جملة (100 كجم - 500 كجم)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="bg-onyx text-gold px-8 py-4 font-bold text-xl rounded hover:bg-espresso transition w-full shadow-md">إرسال الطلب عبر واتساب</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-onyx text-center py-8 border-t border-gray-800">
+        <p class="text-gray-400 text-sm">© 2026 Edrisi Coffee B2B Direct Supply. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+            var name = document.getElementById("wa_name").value;
+            var company = document.getElementById("wa_company").value;
+            var quantity = document.getElementById("wa_quantity").value;
+            var text = "مرحباً الإدريسي للبن المختص، أود طلب تسعيرة / عينة بن يمني:%0a%0a👤 الاسم: " + name + "%0a🏢 الشركة: " + company + "%0a📦 الكمية: " + quantity;
+            var url = "https://wa.me/905394780930?text=" + text;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
+
+```
+
+---
+
+### 2. الكود الشامل لصفحة المحاصيل والشروحات (`varieties.html`)
+
+*(تمت استعادة الشريط العلوي، القائمة المنسدلة الكاملة للتنقل، تحديث صور الإسماعيلي والحرازي لتعمل 100%، وتم إضافة نموذج الطلب والاتصال أسفل الصفحة لتسهيل الطلب).*
+قم بنسخ هذا الكود واستبدال محتوى ملف `varieties.html` به:
+
+```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl" style="scroll-behavior: smooth;">
 <head>
@@ -19,7 +255,14 @@
 </head>
 <body class="font-sans bg-white text-onyx selection:bg-gold selection:text-onyx">
 
-    <!-- القائمة الرئيسية -->
+    <!-- شريط التواصل العلوي (تمت إضافته لصفحة المحاصيل لتوحيد الهوية) -->
+    <div class="bg-onyx text-white py-2 text-sm text-center">
+        <span>للتواصل المباشر مع المبيعات:</span>
+        <a href="https://wa.me/905394780930" class="text-gold font-bold mx-2" target="_blank">00905394780930</a> | 
+        <a href="mailto:itlobni@gmail.com" class="text-gold font-bold mx-2">itlobni@gmail.com</a>
+    </div>
+
+    <!-- القائمة الرئيسية الكاملة -->
     <nav class="bg-espresso text-white sticky top-0 z-50 shadow-lg">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-3">
@@ -29,9 +272,12 @@
                 </div>
             </a>
             <div class="hidden md:flex space-x-8 space-x-reverse font-medium items-center">
-                <a href="index.html" class="hover:text-gold transition">العودة للرئيسية</a>
+                <a href="index.html" class="hover:text-gold transition">الرئيسية</a>
+                <a href="index.html#story" class="hover:text-gold transition">قصتنا</a>
+                <a href="varieties.html" class="text-gold border-b-2 border-gold pb-1">المحاصيل والتفاصيل</a>
+                <a href="index.html#b2b" class="hover:text-gold transition">توريد الجملة</a>
             </div>
-            <a href="index.html#contact" class="bg-gold text-onyx px-5 py-2 font-bold rounded hover:bg-white transition hidden md:block">طلب عينة</a>
+            <a href="#contact" class="bg-gold text-onyx px-5 py-2 font-bold rounded hover:bg-white transition hidden md:block">طلب عينة</a>
         </div>
     </nav>
 
@@ -41,7 +287,7 @@
         <p class="text-xl text-gray-300">أدق التفاصيل للبن اليمني الأصيل المخصص للمحامص</p>
     </section>
 
-    <!-- 1. البن الحرازي -->
+    <!-- 1. البن الحرازي (تم تحديث الصورة) -->
     <section id="harazi" class="py-20 bg-offwhite border-b border-gray-300">
         <div class="container mx-auto px-6 max-w-6xl">
             <h2 class="text-4xl font-bold text-espresso mb-4">البن الحرازي (Harazi Coffee)</h2>
@@ -51,8 +297,8 @@
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <div>
-                    <!-- صورة واقعية احترافية -->
-                    <img src="https://images.unsplash.com/photo-1620052581237-5d38b6933583?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="جبال حراز زراعة البن" class="w-full h-80 object-cover rounded-lg shadow-md mb-6 border border-gray-300">
+                    <!-- صورة جديدة وتعمل بكفاءة -->
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="نبات البن والكرز" class="w-full h-80 object-cover rounded-lg shadow-md mb-6 border border-gray-300">
                     <h3 class="text-2xl font-bold text-onyx mb-4">السرد التاريخي والبيئي</h3>
                     <p class="text-lg text-gray-700 leading-relaxed mb-6">
                         تعتبر جبال حراز من أشهر معاقل زراعة القهوة المختصة في العالم. تتميز هذه المنطقة بتضاريسها شديدة الانحدار وقراها المحصنة التي تعانق السحاب. يعتمد المزارعون في حراز على مياه الأمطار والينابيع الطبيعية. نظراً لارتفاع المنطقة ونقاء هوائها، تنضج حبات البن ببطء شديد، مما ينتج حبات بن صلبة جداً وقادرة على تحمل درجات الحمص المتفاوتة.
@@ -100,7 +346,7 @@
         </div>
     </section>
 
-    <!-- 3. البن الإسماعيلي -->
+    <!-- 3. البن الإسماعيلي (تم تحديث الصورة) -->
     <section id="ismaili" class="py-20 bg-offwhite border-b border-gray-300">
         <div class="container mx-auto px-6 max-w-6xl">
             <h2 class="text-4xl font-bold text-espresso mb-4">البن الإسماعيلي (Ismaili Coffee)</h2>
@@ -110,7 +356,8 @@
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <div>
-                    <img src="https://images.unsplash.com/photo-1495474472201-44047a50b86a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="قهوة إسماعيلي مختصة" class="w-full h-80 object-cover rounded-lg shadow-md mb-6 border border-gray-300">
+                    <!-- صورة جديدة تعمل بكفاءة -->
+                    <img src="https://images.unsplash.com/photo-1524351199678-981f2df95cdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="قهوة إسماعيلي مختصة" class="w-full h-80 object-cover rounded-lg shadow-md mb-6 border border-gray-300">
                     <h3 class="text-2xl font-bold text-onyx mb-4">السرد التاريخي والبيئي</h3>
                     <p class="text-lg text-gray-700 leading-relaxed mb-6">
                         يتميز بطفرة نباتية فريدة تجعل شكل الحبة مختلفاً؛ فهي صغيرة الحجم، دائرية، وتُشبه حبات البازلاء (Peaberry). هذا الصغر في الحجم يعني أن النكهات تتركز بشكل مكثف جداً داخل كل حبة. كميات الإنتاج السنوية محدودة للغاية، مما يجعله كنزاً حقيقياً للباحثين عن المحاصيل الدقيقة.
@@ -187,10 +434,76 @@
         </div>
     </section>
 
+    <!-- قسم التواصل وطلب العينات (تم إضافته لصفحة المحاصيل لتسهيل الشراء) -->
+    <section id="contact" class="py-24 bg-gray-200">
+        <div class="container mx-auto px-6 lg:flex lg:gap-12 max-w-7xl">
+            <div class="lg:w-1/3 bg-onyx text-white p-10 rounded-lg shadow-xl mb-10 lg:mb-0">
+                <h3 class="text-3xl font-bold text-gold mb-8">تواصل معنا</h3>
+                <div class="space-y-8">
+                    <div class="flex items-center gap-6">
+                        <div class="w-12 h-12 bg-espresso flex items-center justify-center rounded-full text-gold font-bold text-xl">✉</div>
+                        <div>
+                            <p class="text-sm text-gray-400 mb-1">البريد الإلكتروني</p>
+                            <a href="mailto:itlobni@gmail.com" class="font-bold text-lg hover:text-gold transition">itlobni@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <div class="w-12 h-12 bg-espresso flex items-center justify-center rounded-full text-gold font-bold text-xl">☏</div>
+                        <div>
+                            <p class="text-sm text-gray-400 mb-1">واتساب</p>
+                            <p class="font-bold text-lg" dir="ltr">+90 539 478 09 30</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12">
+                    <a href="https://wa.me/905394780930" target="_blank" class="block w-full text-center bg-green-600 text-white px-6 py-4 font-bold text-lg rounded hover:bg-green-500 transition shadow-lg">تواصل عبر WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="lg:w-2/3 bg-white p-10 rounded-lg shadow-xl border-t-4 border-gold">
+                <h3 class="text-3xl font-bold text-espresso mb-8">طلب عينة / تسعيرة الجملة</h3>
+                <form onsubmit="sendToWhatsApp(event)" class="space-y-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-3">الاسم بالكامل</label>
+                            <input type="text" id="wa_name" class="w-full px-5 py-3 border border-gray-300 rounded focus:border-gold bg-gray-50 text-lg" required>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-3">اسم الشركة / المحمصة</label>
+                            <input type="text" id="wa_company" class="w-full px-5 py-3 border border-gray-300 rounded focus:border-gold bg-gray-50 text-lg" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-3">الكمية المطلوبة</label>
+                        <select id="wa_quantity" class="w-full px-5 py-3 border border-gray-300 rounded focus:border-gold bg-gray-50 text-lg">
+                            <option value="عينة للتذوق (100 جم - 150 جم)">عينة للتذوق (100 جم - 150 جم)</option>
+                            <option value="طلبية صغرى (20 كجم - 50 كجم)">طلبية صغرى (20 كجم - 50 كجم)</option>
+                            <option value="طلبية جملة (100 كجم - 500 كجم)">طلبية جملة (100 كجم - 500 كجم)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="bg-onyx text-gold px-8 py-4 font-bold text-xl rounded hover:bg-espresso transition w-full shadow-md">إرسال الطلب عبر واتساب</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-onyx text-center py-8 border-t border-gray-800">
         <p class="text-gray-400 text-sm">© 2026 Edrisi Coffee B2B Direct Supply. All rights reserved.</p>
     </footer>
 
+    <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+            var name = document.getElementById("wa_name").value;
+            var company = document.getElementById("wa_company").value;
+            var quantity = document.getElementById("wa_quantity").value;
+            var text = "مرحباً الإدريسي للبن المختص، أود طلب تسعيرة / عينة بن يمني:%0a%0a👤 الاسم: " + name + "%0a🏢 الشركة: " + company + "%0a📦 الكمية: " + quantity;
+            var url = "https://wa.me/905394780930?text=" + text;
+            window.open(url, '_blank');
+        }
+    </script>
 </body>
 </html>
+
+```
