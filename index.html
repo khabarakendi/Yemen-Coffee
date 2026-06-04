@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- تم تحديث العنوان الإنجليزي -->
     <title>الإدريسي لتوريد البن اليمني - Edrisi Coffee B2B</title>
-    <!-- خطوط جوجل: تجوال للنصوص العربية، و Cinzel للشعار الإنجليزي الفاخر -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -40,93 +38,212 @@
     <nav class="bg-espresso text-white sticky top-0 z-50 shadow-lg">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             
-            <!-- تم تحديث الشعار النصي الاحترافي لـ Edrisi -->
-            <div class="flex items-center gap-3">
-                <div class="text-3xl font-serif font-bold text-gold tracking-widest mt-1">Edrisi</div>
-                <div class="text-sm font-medium text-gray-300 border-r-2 border-gold pr-3 mr-1 leading-tight">
-                    الإدريسي<br>للبن المختص
-                </div>
-            </div>
+            <!-- الشعار المصور لـ Edrisi -->
+            <a href="#home" class="flex items-center gap-3">
+                <img src="idrisi-logo.png" alt="الإدريسي للبن المختص - Edrisi Coffee Supply" class="h-16 w-auto">
+            </a>
             
             <div class="hidden md:flex space-x-8 space-x-reverse font-medium items-center">
                 <a href="#home" class="hover:text-gold transition">الرئيسية</a>
+                <a href="#story" class="hover:text-gold transition">قصتنا</a>
                 <a href="#varieties" class="hover:text-gold transition">المحاصيل</a>
                 <a href="#b2b" class="hover:text-gold transition">توريد الجملة</a>
                 <a href="#posts" class="hover:text-gold transition">آخر الأخبار</a>
-                <a href="#story" class="hover:text-gold transition">قصتنا</a>
             </div>
             <a href="#contact" class="bg-gold text-onyx px-5 py-2 font-bold rounded hover:bg-white transition hidden md:block">طلب عينة</a>
         </div>
     </nav>
 
     <!-- قسم البطل (Hero Section) -->
-    <header id="home" class="relative bg-cover bg-center h-[80vh] flex items-center" style="background-image: url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+    <header id="home" class="relative bg-cover bg-center h-[90vh] flex items-center" style="background-image: url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
         <div class="absolute inset-0 bg-onyx bg-opacity-70"></div>
         <div class="relative container mx-auto px-6 z-10 text-white">
-            <!-- تم تحديث الاسم الإنجليزي هنا -->
             <span class="text-gold font-serif tracking-widest mb-2 block text-xl">Edrisi Coffee Supply</span>
-            <h1 class="text-5xl md:text-6xl font-bold mb-4 leading-tight">توريد البن اليمني المباشر <br> <span class="text-gold">من المزرعة إلى المحمصة</span></h1>
-            <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl leading-relaxed">نحن نوفر أعرق حبوب البن الأخضر اليمني وأكثرها تعقيداً. نربط مزارع المرتفعات اليمنية مباشرة بمحامص القهوة المختصة ومستوردي الجملة حول العالم.</p>
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 leading-tight">توريد البن اليمني المباشر <br> <span class="text-gold">من المزرعة إلى المحمصة</span></h1>
+            <p class="text-lg md:text-2xl text-gray-300 mb-8 max-w-3xl leading-relaxed">نحن نوفر أعرق حبوب البن الأخضر اليمني وأكثرها تعقيداً. نربط مزارع المرتفعات اليمنية مباشرة بمحامص القهوة المختصة ومستوردي الجملة حول العالم.</p>
             <div class="flex gap-4">
-                <a href="#contact" class="bg-gold text-onyx px-8 py-3 font-bold text-lg rounded hover:bg-white transition shadow-lg">اطلب تسعيرة الآن</a>
-                <a href="#varieties" class="border-2 border-gold text-gold px-8 py-3 font-bold text-lg rounded hover:bg-gold hover:text-onyx transition">تصفح المحاصيل</a>
+                <a href="#contact" class="bg-gold text-onyx px-8 py-4 font-bold text-lg rounded hover:bg-white transition shadow-lg">اطلب تسعيرة الآن</a>
+                <a href="#varieties" class="border-2 border-gold text-gold px-8 py-4 font-bold text-lg rounded hover:bg-gold hover:text-onyx transition">تصفح المحاصيل</a>
             </div>
         </div>
     </header>
 
-    <!-- قسم المحاصيل (Coffee Varieties) -->
-    <section id="varieties" class="py-20 bg-offwhite">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center text-espresso mb-12">محاصيل الإدريسي الفاخرة</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- نوع: حراز -->
-                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-gold hover:shadow-xl transition">
-                    <h3 class="text-2xl font-bold text-onyx mb-2">قهوة حراز (Haraz)</h3>
-                    <p class="text-gray-600 mb-4 text-sm">تُزرع في جبال حراز التاريخية بطرق زراعية متوارثة.</p>
-                    <ul class="text-sm space-y-2 mb-4">
-                        <li><strong>الإيحاءات:</strong> تفاح، توت، زهور، شوكولاتة داكنة</li>
-                        <li><strong>القوام:</strong> متوسط إلى ممتلئ</li>
-                        <li><strong>المعالجة:</strong> مجفف طبيعياً (Sun-dried)</li>
+    <!-- قسم القصة (Our Story) مفصل -->
+    <section id="story" class="py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold text-espresso mb-4">قصتنا: إرث زراعي يمتد لقرون</h2>
+                <div class="w-24 h-1 bg-gold mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-onyx mb-4 flex items-center gap-2"><span class="text-gold">✦</span> جذور القهوة الأصلية</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                        البن اليمني ليس مجرد محصول زراعي عابر، بل هو الحاضنة الوراثية الأولى التي انطلقت منها ثقافة القهوة إلى العالم. يمثل البن اليمني الجينات الأصلية والأنقى للقهوة المختصة. على مدى قرون، تكيفت هذه الأشجار مع البيئة الجبلية القاسية، مما أنتج سلالات فريدة لا يمكن استنساخها في أي مكان آخر. نحن في "الإدريسي" لا نبيع البن فحسب، بل نصدر جزءاً من هذا التاريخ العريق إلى محامص العالم.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold text-onyx mb-4 flex items-center gap-2"><span class="text-gold">✦</span> الزراعة فوق السحاب</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        تُزرع أشجار البن اليمني في مدرجات جبلية حجرية شاهقة ومذهلة، تمتد على ارتفاعات تصل إلى 2500 متر. هذا الارتفاع يعرض الأشجار لضغوط مناخية قاسية، مما يبطئ من عملية نضج الكرز، ويدفع الشجرة لتركيز كميات هائلة من السكريات المعقدة والمركبات العطرية داخل حبة البن، وهو السر وراء الكثافة العالية والنكهة المركبة.
+                    </p>
+                </div>
+                
+                <div class="bg-offwhite p-8 rounded-lg border border-gray-200 shadow-sm flex flex-col justify-center">
+                    <h3 class="text-2xl font-bold text-onyx mb-4 flex items-center gap-2"><span class="text-gold">✦</span> القطاف والمعالجة اليدوية</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        بعيداً عن الآلات الصناعية، يتم قطف "الكرز الأحمر" الناضج فقط يدوياً في عملية انتقائية دقيقة. 
+                        بعد القطاف، تبدأ مرحلة المعالجة الطبيعية (Sun-dried Natural Process)، حيث يُنشر الكرز على أسرة تجفيف مرتفعة أو أسطح حجرية نظيفة تحت أشعة الشمس الجبلية لأسابيع. 
+                        <br><br>
+                        هذه العملية البطيئة تسمح لحبة البن الخضراء بامتصاص السكريات ونكهات الفواكه من القشرة لضمان امتصاص حبة البن لسكريات القشرة، مما يمنحه تعقيده النكهي الفريد الذي يجمع بين الفواكه المجففة، الشوكولاتة، والبهارات.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المحاصيل (Coffee Varieties) - أقسام مفصلة وكبيرة -->
+    <section id="varieties" class="bg-onyx text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold text-gold mb-4">الدليل الشامل لمحاصيل "الإدريسي" الفاخرة</h2>
+            <p class="text-xl text-gray-400">نستعرض لكم أدق تفاصيل حصادنا من قمم الجبال اليمنية</p>
+        </div>
+    </section>
+
+    <!-- محصول: البن الحرازي -->
+    <section class="py-24 bg-offwhite border-b border-gray-300">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h2 class="text-4xl font-bold text-espresso mb-2">البن الحرازي (Harazi Coffee)</h2>
+            <div class="inline-block bg-gold text-onyx px-4 py-1 rounded font-bold text-sm mb-8">
+                منطقة الزراعة: جبال حراز | الارتفاع: 1900 - 2400 متر
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-onyx mb-4">السرد التاريخي والبيئي</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        تعتبر جبال حراز من أشهر معاقل زراعة القهوة المختصة في العالم. تتميز هذه المنطقة بتضاريسها شديدة الانحدار وقراها المحصنة التي تعانق السحاب. يعتمد المزارعون في حراز على مياه الأمطار والينابيع الطبيعية لضخ الحياة في المدرجات الزراعية التي بُنيت منذ مئات السنين. نظراً لارتفاع المنطقة ونقاء هوائها، تنضج حبات البن ببطء شديد، مما ينتج حبات بن صلبة جداً وقادرة على تحمل درجات الحمص المتفاوتة، مما يجعلها خياراً مفضلاً للمحامص الباحثة عن المرونة والتميز.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg border-r-4 border-gold">
+                    <h3 class="text-2xl font-bold text-espresso mb-6">الخصائص الحسية (Cupping Profile)</h3>
+                    <ul class="space-y-4 text-lg text-gray-700">
+                        <li><strong class="text-onyx">☕ الإيحاءات والنكهات:</strong> يتميز الحرازي بانفجار فاكهي معقد. تتصدر إيحاءات التوت البري، الفراولة، والتفاح الأخضر، مع نهاية غنية بنكهة الشوكولاتة الداكنة والعسل.</li>
+                        <li><strong class="text-onyx">🍋 الحموضة:</strong> حموضة نبيذية ساطعة (Bright Winey Acidity) تضفي حيوية ونضارة على الكوب.</li>
+                        <li><strong class="text-onyx">🌊 القوام (Body):</strong> متوسط إلى ممتلئ، يترك أثراً مخملياً ناعماً في الفم.</li>
+                        <li><strong class="text-onyx">🎯 الاستخدام الأمثل:</strong> ممتاز لمشروبات الفلتر (V60, Chemex) لإبراز النوتات الفاكهية، ويضيف حلاوة استثنائية لخلطات الإسبريسو.</li>
                     </ul>
                 </div>
-                <!-- نوع: يافع -->
-                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-gold hover:shadow-xl transition">
-                    <h3 class="text-2xl font-bold text-onyx mb-2">قهوة يافع (Yafa)</h3>
-                    <p class="text-gray-600 mb-4 text-sm">تتميز بطبيعة وعرة تمنح البن حلاوة مكثفة وقواماً ثقيلاً.</p>
-                    <ul class="text-sm space-y-2 mb-4">
-                        <li><strong>الإيحاءات:</strong> عسل، فواكه ذات نواة، مكسرات محمصة</li>
-                        <li><strong>القوام:</strong> ثقيل وشرابي (Syrupy)</li>
-                        <li><strong>المعالجة:</strong> مجفف طبيعياً</li>
+            </div>
+        </div>
+    </section>
+
+    <!-- محصول: البن الخولاني -->
+    <section class="py-24 bg-white border-b border-gray-300">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h2 class="text-4xl font-bold text-espresso mb-2">البن الخولاني (Khawlani Coffee)</h2>
+            <div class="inline-block bg-gold text-onyx px-4 py-1 rounded font-bold text-sm mb-8">
+                منطقة الزراعة: جبال خولان وصعدة | الارتفاع: 1500 - 2100 متر
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="bg-offwhite p-8 rounded-lg shadow-lg border-r-4 border-gold order-2 lg:order-1">
+                    <h3 class="text-2xl font-bold text-espresso mb-6">الخصائص الحسية (Cupping Profile)</h3>
+                    <ul class="space-y-4 text-lg text-gray-700">
+                        <li><strong class="text-onyx">☕ الإيحاءات والنكهات:</strong> مكسرات محمصة (لوز، بندق)، هيل، توابل دافئة، مع حلاوة السكر البني والكراميل.</li>
+                        <li><strong class="text-onyx">🍋 الحموضة:</strong> حموضة معتدلة وناعمة (Mellow & Balanced).</li>
+                        <li><strong class="text-onyx">🌊 القوام (Body):</strong> قوام غني، كريمي، وثقيل جداً.</li>
+                        <li><strong class="text-onyx">🎯 الاستخدام الأمثل:</strong> مثالي جداً للإسبريسو الكلاسيكي، ولتحضير القهوة العربية والتركية نظراً لقوامه الثقيل ونوتاته التوابلية العميقة.</li>
                     </ul>
                 </div>
-                <!-- نوع: إسماعيلي -->
-                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-gold hover:shadow-xl transition">
-                    <h3 class="text-2xl font-bold text-onyx mb-2">قهوة إسماعيلي (Ismaili)</h3>
-                    <p class="text-gray-600 mb-4 text-sm">من أشهر الأسماء في عالم البن اليمني، تتميز بحباتها الدائرية الصغيرة.</p>
-                    <ul class="text-sm space-y-2 mb-4">
-                        <li><strong>الإيحاءات:</strong> فراولة، نبيذ، كاكاو داكن</li>
-                        <li><strong>القوام:</strong> مخملي</li>
-                        <li><strong>المعالجة:</strong> مجفف طبيعياً</li>
+                <div class="order-1 lg:order-2">
+                    <h3 class="text-2xl font-bold text-onyx mb-4">السرد التاريخي والبيئي</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        البن الخولاني ليس مجرد محصول، بل هو تراث ثقافي إنساني تم تسجيل المهارات والتقاليد المرتبطة بزراعته ضمن قائمة اليونسكو للتراث الثقافي غير المادي. تُزرع أشجار البن الخولاني في وديان وسفوح جبلية غنية بالمعادن. يتميز المزارعون في خولان بتقنيات خاصة في التظليل والتقليم، مما يمنح الشجرة بيئة مثالية لإنتاج ثمار تتسم بالتوازن المذهل. يحظى هذا النوع بطلب هائل في الأسواق الإقليمية، وبدأ الآن في غزو أسواق القهوة المختصة العالمية.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- محصول: البن الإسماعيلي -->
+    <section class="py-24 bg-offwhite border-b border-gray-300">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h2 class="text-4xl font-bold text-espresso mb-2">البن الإسماعيلي (Ismaili Coffee)</h2>
+            <div class="inline-block bg-gold text-onyx px-4 py-1 rounded font-bold text-sm mb-8">
+                منطقة الزراعة: بني إسماعيل | الارتفاع: 1800 - 2200 متر
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-onyx mb-4">السرد التاريخي والبيئي</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        يُعد البن الإسماعيلي أحد أندر وأغلى أنواع البن اليمني. يتميز بطفرة نباتية فريدة تجعل شكل الحبة مختلفاً؛ فهي صغيرة الحجم، دائرية، وتُشبه إلى حد كبير حبات البازلاء (Peaberry). هذا الصغر في الحجم يعني أن النكهات والزيوت العطرية تتركز بشكل مكثف جداً داخل كل حبة. زراعة البن الإسماعيلي تتطلب عناية فائقة، وكميات الإنتاج السنوية محدودة للغاية، مما يجعله كنزاً حقيقياً لمديري المشتريات الذين يبحثون عن المحاصيل الدقيقة (Micro-lots) الحصرية.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg border-r-4 border-gold">
+                    <h3 class="text-2xl font-bold text-espresso mb-6">الخصائص الحسية (Cupping Profile)</h3>
+                    <ul class="space-y-4 text-lg text-gray-700">
+                        <li><strong class="text-onyx">☕ الإيحاءات والنكهات:</strong> معقد جداً؛ يبدأ بنكهات الفواكه الحمراء المركزة (كرز، فراولة)، يليه تلميحات من الزهور العطرية، وينتهي بنكهة الكاكاو الفاخر.</li>
+                        <li><strong class="text-onyx">🍋 الحموضة:</strong> حموضة فاكهية لاذعة قليلاً (Tart & Complex) تذكرك بالفواكه الاستوائية.</li>
+                        <li><strong class="text-onyx">🌊 القوام (Body):</strong> مخملي ناعم يشبه الشراب (Syrupy).</li>
+                        <li><strong class="text-onyx">🎯 الاستخدام الأمثل:</strong> استخلاص الفلتر المقطر البارد (Cold Brew) أو V60 لإعطاء العميل تجربة تذوق استثنائية ونادرة.</li>
                     </ul>
                 </div>
-                <!-- نوع: مطري -->
-                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-gold hover:shadow-xl transition">
-                    <h3 class="text-2xl font-bold text-onyx mb-2">قهوة مطري (Matari)</h3>
-                    <p class="text-gray-600 mb-4 text-sm">قهوة الملوك تاريخياً، توفر قاعدة شوكولاتية عميقة مع بهارات برية.</p>
-                    <ul class="text-sm space-y-2 mb-4">
-                        <li><strong>الإيحاءات:</strong> شوكولاتة، بهارات غريبة، نبيذ أحمر</li>
-                        <li><strong>القوام:</strong> غني وممتلئ</li>
-                        <li><strong>المعالجة:</strong> مجفف طبيعياً</li>
+            </div>
+        </div>
+    </section>
+
+    <!-- محصول: البن المطري -->
+    <section class="py-24 bg-white border-b border-gray-300">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h2 class="text-4xl font-bold text-espresso mb-2">البن المطري (Matari Coffee)</h2>
+            <div class="inline-block bg-gold text-onyx px-4 py-1 rounded font-bold text-sm mb-8">
+                منطقة الزراعة: بني مطر (غرب صنعاء) | الارتفاع: 2000 - 2500 متر
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="bg-offwhite p-8 rounded-lg shadow-lg border-r-4 border-gold order-2 lg:order-1">
+                    <h3 class="text-2xl font-bold text-espresso mb-6">الخصائص الحسية (Cupping Profile)</h3>
+                    <ul class="space-y-4 text-lg text-gray-700">
+                        <li><strong class="text-onyx">☕ الإيحاءات والنكهات:</strong> شوكولاتة داكنة مكثفة، تبغ حلو، فلفل أسود، بهارات غريبة، ونبيذ أحمر معتق.</li>
+                        <li><strong class="text-onyx">🍋 الحموضة:</strong> حموضة حادة وواضحة (Sharp & Winey).</li>
+                        <li><strong class="text-onyx">🌊 القوام (Body):</strong> قوام ممتلئ، كثيف، وقوي (Full, Heavy Body).</li>
+                        <li><strong class="text-onyx">🎯 الاستخدام الأمثل:</strong> خلطات الإسبريسو القوية ومشروبات الحليب، حيث أن قوام الشوكولاتة يخترق الحليب بوضوح تام.</li>
                     </ul>
                 </div>
-                <!-- نوع: شبام -->
-                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-gold hover:shadow-xl transition">
-                    <h3 class="text-2xl font-bold text-onyx mb-2">قهوة شبام (Shibam)</h3>
-                    <p class="text-gray-600 mb-4 text-sm">جوهرة مخفية تقدم قهوة متسقة للغاية بخصائص الفواكه المجففة.</p>
-                    <ul class="text-sm space-y-2 mb-4">
-                        <li><strong>الإيحاءات:</strong> تين مجفف، زبيب، دبس السكر</li>
-                        <li><strong>القوام:</strong> ناعم وكريمي</li>
-                        <li><strong>المعالجة:</strong> مجفف طبيعياً</li>
+                <div class="order-1 lg:order-2">
+                    <h3 class="text-2xl font-bold text-onyx mb-4">السرد التاريخي والبيئي</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        إذا كان هناك اسم واحد يرتبط تاريخياً بميناء "المخا" العظيم، فهو البن المطري. كان هذا البن هو المفضل لدى ملوك وأمراء أوروبا في القرون الماضية. تُعد مديرية بني مطر من أعلى المناطق زراعة للبن في اليمن، وتتميز ببرودة طقسها والضباب الكثيف الذي يغطي المدرجات. هذا المناخ البارد يمنح البن المطري شخصية قوية ونكهة "ترابية" برية لا يمكن نسيانها. إنه التعريف الكلاسيكي لطعم الـ "Mocha" الأصيل.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- محصول: البن اليافعي -->
+    <section class="py-24 bg-offwhite border-b border-gray-300">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <h2 class="text-4xl font-bold text-espresso mb-2">البن اليافعي (Yafai Coffee)</h2>
+            <div class="inline-block bg-gold text-onyx px-4 py-1 rounded font-bold text-sm mb-8">
+                منطقة الزراعة: جبال يافع | الارتفاع: 1600 - 2200 متر
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-onyx mb-4">السرد التاريخي والبيئي</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        تتميز جبال يافع بطبيعتها الجيولوجية القاسية والوعرة، وتاريخها العسكري والقبلي العريق الذي انعكس على قوة وصلابة أراضيها. تُسقى مدرجات البن اليافعي بالاعتماد الكلي على مياه الأمطار الموسمية والغيوم الملامسة للقمم. يتميز المزارع اليافعي بارتباطه الروحي بأرضه، وتتم معالجة البن هنا بأساليب تجفيف دقيقة تعزز من قوام القهوة. ينتج عن هذه البيئة بن ذو طابع كلاسيكي دافئ، يبتعد قليلاً عن الحموضة الفاكهية ليقدم كوباً يتميز بالحلاوة والعمق.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg border-r-4 border-gold">
+                    <h3 class="text-2xl font-bold text-espresso mb-6">الخصائص الحسية (Cupping Profile)</h3>
+                    <ul class="space-y-4 text-lg text-gray-700">
+                        <li><strong class="text-onyx">☕ الإيحاءات والنكهات:</strong> عسل أسمر طبيعي، فواكه مجففة (خوخ، مشمش)، وتلميحات من المخبوزات والقمح المحمص.</li>
+                        <li><strong class="text-onyx">🍋 الحموضة:</strong> حموضة خفيفة، معتدلة جداً ومريحة للمعدة (Mild & Smooth).</li>
+                        <li><strong class="text-onyx">🌊 القوام (Body):</strong> ثقيل، غني، وشرابي يكسو الفم (Coating Syrupy Body).</li>
+                        <li><strong class="text-onyx">🎯 الاستخدام الأمثل:</strong> المشروبات اليومية المريحة، القهوة المقطرة بأداة الكيمكس، أو الإسبريسو ذو الطابع الحلو الكلاسيكي الخالي من الحموضة المزعجة.</li>
                     </ul>
                 </div>
             </div>
@@ -134,140 +251,118 @@
     </section>
 
     <!-- قسم توريد الجملة (B2B Logistics) -->
-    <section id="b2b" class="py-20 bg-onyx text-white">
-        <div class="container mx-auto px-6 lg:flex lg:items-center lg:gap-12">
+    <section id="b2b" class="py-24 bg-onyx text-white">
+        <div class="container mx-auto px-6 lg:flex lg:items-center lg:gap-12 max-w-6xl">
             <div class="lg:w-1/2 mb-10 lg:mb-0">
-                <h2 class="text-4xl font-bold text-gold mb-6">لوجستيات وتوريد الجملة (B2B)</h2>
-                <p class="text-gray-300 mb-6 leading-relaxed">نحن نفهم احتياجات مديري المشتريات والمحامص المختصة. نضمن لك الشفافية في المعالجة، الجودة الثابتة، وسهولة الإجراءات اللوجستية وتخليص الجمارك.</p>
-                <ul class="space-y-4">
-                    <li class="flex items-center gap-3"><span class="w-2 h-2 bg-gold rounded-full"></span> <strong>العينات (Samples):</strong> من 100 جم إلى 150 جم (لاختبارات الحمص والتذوق).</li>
-                    <li class="flex items-center gap-3"><span class="w-2 h-2 bg-gold rounded-full"></span> <strong>الطلبات الصغرى (Micro-lots):</strong> من 20 كجم إلى 50 كجم للمحامص المتخصصة.</li>
-                    <li class="flex items-center gap-3"><span class="w-2 h-2 bg-gold rounded-full"></span> <strong>طلبات الجملة (Bulk):</strong> 100 كجم فأكثر للحاويات التجارية.</li>
-                    <li class="flex items-center gap-3"><span class="w-2 h-2 bg-gold rounded-full"></span> <strong>الشحن:</strong> شحن بري من اليمن إلى السعودية.</li>
+                <h2 class="text-5xl font-bold text-gold mb-8">لوجستيات وتوريد الجملة (B2B)</h2>
+                <p class="text-xl text-gray-300 mb-8 leading-relaxed">نحن نفهم احتياجات مديري المشتريات والمحامص المختصة. نضمن لك الشفافية في المعالجة، الجودة الثابتة، وسهولة الإجراءات اللوجستية وتخليص الجمارك.</p>
+                <ul class="space-y-6 text-lg">
+                    <li class="flex items-center gap-4"><span class="w-3 h-3 bg-gold rounded-full"></span> <strong>العينات (Samples):</strong> من 100 جم إلى 150 جم (لاختبارات الحمص والتذوق).</li>
+                    <li class="flex items-center gap-4"><span class="w-3 h-3 bg-gold rounded-full"></span> <strong>الطلبات الصغرى (Micro-lots):</strong> من 20 كجم إلى 50 كجم للمحامص المتخصصة.</li>
+                    <li class="flex items-center gap-4"><span class="w-3 h-3 bg-gold rounded-full"></span> <strong>طلبات الجملة (Bulk):</strong> 100 كجم فأكثر للحاويات التجارية.</li>
+                    <li class="flex items-center gap-4"><span class="w-3 h-3 bg-gold rounded-full"></span> <strong>الشحن:</strong> شحن بري من اليمن إلى السعودية.</li>
                 </ul>
             </div>
-            <div class="lg:w-1/2 bg-espresso p-8 rounded-lg border border-gray-700 shadow-2xl text-center">
-                <h3 class="text-2xl font-bold mb-4">جاهزون لتلبية احتياجاتك</h3>
-                <p class="text-sm text-gray-300 mb-6">قدرات توريد تصل إلى أطنان شهرياً بحسب مواسم الحصاد. جميع أوراق التصدير وشهادات المنشأ متوفرة.</p>
-                <a href="#contact" class="inline-block bg-gold text-onyx px-8 py-3 font-bold rounded hover:bg-white transition w-full">طلب قائمة الأسعار (RFQ)</a>
+            <div class="lg:w-1/2 bg-espresso p-10 rounded-lg border border-gray-700 shadow-2xl text-center">
+                <h3 class="text-3xl font-bold mb-6">جاهزون لتلبية احتياجاتك</h3>
+                <p class="text-lg text-gray-300 mb-8 leading-relaxed">قدرات توريد تصل إلى أطنان شهرياً بحسب مواسم الحصاد. جميع أوراق التصدير وشهادات المنشأ متوفرة.</p>
+                <a href="#contact" class="inline-block bg-gold text-onyx px-8 py-4 font-bold text-xl rounded hover:bg-white transition w-full shadow-lg">طلب قائمة الأسعار (RFQ)</a>
             </div>
         </div>
     </section>
 
     <!-- قسم المنشورات والأخبار (Posts Section) -->
-    <section id="posts" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center text-espresso mb-12">أحدث المنشورات والأخبار</h2>
+    <section id="posts" class="py-24 bg-gray-100">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-5xl font-bold text-center text-espresso mb-16">أحدث المنشورات والأخبار</h2>
             
-            <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md border-r-4 border-gold mb-8">
-                <span class="text-gold font-bold text-sm">تحديث جديد</span>
-                <h3 class="text-2xl font-bold text-onyx mt-2 mb-4">عنوان المنشور هنا (مثال: وصول محصول حراز الجديد)</h3>
-                <p class="text-gray-700 leading-relaxed mb-4">
+            <div class="bg-white p-10 rounded-lg shadow-md border-r-4 border-gold mb-8">
+                <span class="text-gold font-bold text-sm tracking-widest uppercase">تحديث جديد</span>
+                <h3 class="text-3xl font-bold text-onyx mt-3 mb-6">عنوان المنشور هنا (مثال: وصول محصول حراز الجديد)</h3>
+                <p class="text-xl text-gray-700 leading-relaxed mb-4">
                     هنا يمكنك كتابة تفاصيل المنشور، الأخبار، أو العروض التي ترغب بمشاركتها مع عملائك.
                 </p>
             </div>
-            
-        </div>
-    </section>
-
-    <!-- قسم القصة (Our Story) -->
-    <section id="story" class="py-20 bg-offwhite">
-        <div class="container mx-auto px-6 text-center max-w-4xl">
-            <h2 class="text-4xl font-bold text-espresso mb-6">قصتنا: إرث زراعي يمتد لقرون</h2>
-            <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                البن اليمني ليس مجرد محصول، بل هو جينات القهوة الأصلية. يُزرع البن في مدرجات جبلية شاهقة تصل لارتفاع 2500 متر.
-            </p>
-            <p class="text-lg text-gray-700 leading-relaxed">
-                يتم قطف الكرز الأحمر يدوياً وتجفيفه تحت أشعة الشمس لأسابيع لضمان امتصاص حبة البن لسكريات القشرة، مما يمنحه تعقيده النكهي الفريد.
-            </p>
         </div>
     </section>
 
     <!-- قسم التواصل وطلب العينات -->
-    <section id="contact" class="py-20 bg-gray-200">
-        <div class="container mx-auto px-6 lg:flex lg:gap-12">
-            <div class="lg:w-1/3 bg-onyx text-white p-8 rounded-lg shadow-lg mb-10 lg:mb-0">
-                <h3 class="text-3xl font-bold text-gold mb-6">تواصل معنا</h3>
-                <div class="space-y-6">
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-espresso flex items-center justify-center rounded-full text-gold font-bold">✉</div>
+    <section id="contact" class="py-24 bg-gray-200">
+        <div class="container mx-auto px-6 lg:flex lg:gap-12 max-w-7xl">
+            <div class="lg:w-1/3 bg-onyx text-white p-10 rounded-lg shadow-xl mb-10 lg:mb-0">
+                <h3 class="text-4xl font-bold text-gold mb-8">تواصل معنا</h3>
+                <div class="space-y-8">
+                    <div class="flex items-center gap-6">
+                        <div class="w-14 h-14 bg-espresso flex items-center justify-center rounded-full text-gold font-bold text-xl">✉</div>
                         <div>
-                            <p class="text-sm text-gray-400">البريد الإلكتروني</p>
-                            <a href="mailto:itlobni@gmail.com" class="font-bold hover:text-gold transition">itlobni@gmail.com</a>
+                            <p class="text-sm text-gray-400 mb-1">البريد الإلكتروني</p>
+                            <a href="mailto:itlobni@gmail.com" class="font-bold text-lg hover:text-gold transition">itlobni@gmail.com</a>
                         </div>
                     </div>
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-espresso flex items-center justify-center rounded-full text-gold font-bold">☏</div>
+                    <div class="flex items-center gap-6">
+                        <div class="w-14 h-14 bg-espresso flex items-center justify-center rounded-full text-gold font-bold text-xl">☏</div>
                         <div>
-                            <p class="text-sm text-gray-400">واتساب</p>
-                            <p class="font-bold" dir="ltr">+90 539 478 09 30</p>
+                            <p class="text-sm text-gray-400 mb-1">واتساب</p>
+                            <p class="font-bold text-lg" dir="ltr">+90 539 478 09 30</p>
                         </div>
                     </div>
                 </div>
-                <div class="mt-10">
-                    <a href="https://wa.me/905394780930" target="_blank" class="block w-full text-center bg-green-600 text-white px-6 py-3 font-bold rounded hover:bg-green-500 transition shadow-lg">تواصل عبر WhatsApp</a>
+                <div class="mt-12">
+                    <a href="https://wa.me/905394780930" target="_blank" class="block w-full text-center bg-green-600 text-white px-6 py-4 font-bold text-lg rounded hover:bg-green-500 transition shadow-lg">تواصل عبر WhatsApp</a>
                 </div>
             </div>
 
-            <!-- نموذج الطلب المحدث (تمت برمجته للإرسال إلى واتساب مباشرة) -->
-            <div class="lg:w-2/3 bg-white p-8 rounded-lg shadow-lg border-t-4 border-gold">
-                <h3 class="text-2xl font-bold text-espresso mb-6">طلب عينة / تسعيرة الجملة</h3>
+            <!-- نموذج الطلب المحدث -->
+            <div class="lg:w-2/3 bg-white p-10 rounded-lg shadow-xl border-t-4 border-gold">
+                <h3 class="text-3xl font-bold text-espresso mb-8">طلب عينة / تسعيرة الجملة</h3>
                 
-                <form onsubmit="sendToWhatsApp(event)" class="space-y-6">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <form onsubmit="sendToWhatsApp(event)" class="space-y-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>
-                            <label class="block text-sm font-bold text-gray-700 mb-2">الاسم بالكامل</label>
-                            <input type="text" id="wa_name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-gold bg-gray-50" required>
+                            <label class="block text-sm font-bold text-gray-700 mb-3">الاسم بالكامل</label>
+                            <input type="text" id="wa_name" class="w-full px-5 py-3 border border-gray-300 rounded focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold bg-gray-50 text-lg" required>
                         </div>
                         <div>
-                            <label class="block text-sm font-bold text-gray-700 mb-2">اسم الشركة / المحمصة</label>
-                            <input type="text" id="wa_company" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-gold bg-gray-50" required>
+                            <label class="block text-sm font-bold text-gray-700 mb-3">اسم الشركة / المحمصة</label>
+                            <input type="text" id="wa_company" class="w-full px-5 py-3 border border-gray-300 rounded focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold bg-gray-50 text-lg" required>
                         </div>
                     </div>
                     <div>
-                        <label class="block text-sm font-bold text-gray-700 mb-2">الكمية المطلوبة</label>
-                        <select id="wa_quantity" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-gold bg-gray-50">
+                        <label class="block text-sm font-bold text-gray-700 mb-3">الكمية المطلوبة</label>
+                        <select id="wa_quantity" class="w-full px-5 py-3 border border-gray-300 rounded focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold bg-gray-50 text-lg">
                             <option value="عينة للتذوق (100 جم - 150 جم)">عينة للتذوق (100 جم - 150 جم)</option>
                             <option value="طلبية صغرى (20 كجم - 50 كجم)">طلبية صغرى (20 كجم - 50 كجم)</option>
                             <option value="طلبية جملة (100 كجم - 500 كجم)">طلبية جملة (100 كجم - 500 كجم)</option>
                         </select>
                     </div>
-                    <button type="submit" class="bg-onyx text-gold px-8 py-3 font-bold text-lg rounded hover:bg-espresso transition w-full shadow-md">إرسال الطلب عبر واتساب</button>
+                    <button type="submit" class="bg-onyx text-gold px-8 py-4 font-bold text-xl rounded hover:bg-espresso transition w-full shadow-md mt-4">إرسال الطلب عبر واتساب</button>
                 </form>
-                
             </div>
         </div>
     </section>
 
     <!-- تذييل الموقع (Footer) -->
-    <footer class="bg-onyx text-center py-6 border-t border-gray-800">
-        <!-- تم تحديث الاسم الإنجليزي في التذييل -->
+    <footer class="bg-onyx text-center py-8 border-t border-gray-800">
         <p class="text-gray-400 text-sm">© 2026 Edrisi Coffee B2B Direct Supply. All rights reserved.</p>
     </footer>
 
     <!-- سكربت إرسال البيانات إلى واتساب -->
     <script>
         function sendToWhatsApp(event) {
-            // منع الصفحة من إعادة التحميل (الذهاب لجوجل)
             event.preventDefault();
             
-            // سحب البيانات من النموذج
             var name = document.getElementById("wa_name").value;
             var company = document.getElementById("wa_company").value;
             var quantity = document.getElementById("wa_quantity").value;
             
-            // تجهيز نص الرسالة
             var text = "مرحباً الإدريسي للبن المختص، أود طلب تسعيرة / عينة بن يمني:%0a%0a" + 
                        "👤 الاسم: " + name + "%0a" + 
                        "🏢 الشركة/المحمصة: " + company + "%0a" + 
                        "📦 الكمية: " + quantity;
             
-            // فتح رابط واتساب مع البيانات
             var url = "https://wa.me/905394780930?text=" + text;
             window.open(url, '_blank');
         }
     </script>
 </body>
 </html>
-
-```
