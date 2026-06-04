@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl" style="scroll-behavior: smooth;">
 <head>
@@ -27,25 +26,35 @@
 </head>
 <body class="font-sans bg-offwhite text-onyx selection:bg-gold selection:text-onyx">
 
+    <!-- شريط التواصل العلوي -->
     <div class="bg-onyx text-white py-2 text-sm text-center">
         <span>للتواصل المباشر مع المبيعات:</span>
         <a href="https://wa.me/905394780930" class="text-gold font-bold mx-2" target="_blank">00905394780930</a> | 
         <a href="mailto:itlobni@gmail.com" class="text-gold font-bold mx-2">itlobni@gmail.com</a>
     </div>
 
+    <!-- القائمة الرئيسية (Navbar) -->
     <nav class="bg-espresso text-white sticky top-0 z-50 shadow-lg">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            
+            <!-- الشعار (Logo) -->
+            <!-- إذا قمت برفع صورة شعار باسم logo.png، احذف السطر الذي تحته واستخدم هذا السطر: -->
+            <!-- <img src="logo.png" alt="شعار الموقع" class="h-12"> -->
             <div class="text-2xl font-bold text-gold tracking-wider">YEMEN COFFEE B2B</div>
+            
             <div class="hidden md:flex space-x-8 space-x-reverse font-medium">
                 <a href="#home" class="hover:text-gold transition">الرئيسية</a>
                 <a href="#varieties" class="hover:text-gold transition">المحاصيل</a>
                 <a href="#b2b" class="hover:text-gold transition">توريد الجملة</a>
+                <a href="#posts" class="hover:text-gold transition">آخر الأخبار</a>
                 <a href="#story" class="hover:text-gold transition">قصتنا</a>
             </div>
             <a href="#contact" class="bg-gold text-onyx px-5 py-2 font-bold rounded hover:bg-white transition hidden md:block">طلب عينة</a>
         </div>
     </nav>
 
+    <!-- قسم البطل (Hero Section) -->
+    <!-- لتغيير صورة الخلفية لاحقاً، استبدل الرابط داخل url() باسم صورتك مثل url('bg-image.jpg') -->
     <header id="home" class="relative bg-cover bg-center h-[80vh] flex items-center" style="background-image: url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
         <div class="absolute inset-0 bg-onyx bg-opacity-70"></div>
         <div class="relative container mx-auto px-6 z-10 text-white">
@@ -58,11 +67,12 @@
         </div>
     </header>
 
+    <!-- قسم المحاصيل (Coffee Varieties) -->
     <section id="varieties" class="py-20 bg-offwhite">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center text-espresso mb-12">محاصيلنا من البن اليمني</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
+                <!-- نوع: حراز -->
                 <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-gold hover:shadow-xl transition">
                     <h3 class="text-2xl font-bold text-onyx mb-2">قهوة حراز (Haraz)</h3>
                     <p class="text-gray-600 mb-4 text-sm">تُزرع في جبال حراز التاريخية بطرق زراعية متوارثة.</p>
@@ -72,7 +82,7 @@
                         <li><strong>المعالجة:</strong> مجفف طبيعياً (Sun-dried)</li>
                     </ul>
                 </div>
-
+                <!-- نوع: يافع -->
                 <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-gold hover:shadow-xl transition">
                     <h3 class="text-2xl font-bold text-onyx mb-2">قهوة يافع (Yafa)</h3>
                     <p class="text-gray-600 mb-4 text-sm">تتميز بطبيعة وعرة تمنح البن حلاوة مكثفة وقواماً ثقيلاً.</p>
@@ -82,7 +92,7 @@
                         <li><strong>المعالجة:</strong> مجفف طبيعياً</li>
                     </ul>
                 </div>
-
+                <!-- نوع: إسماعيلي -->
                 <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-gold hover:shadow-xl transition">
                     <h3 class="text-2xl font-bold text-onyx mb-2">قهوة إسماعيلي (Ismaili)</h3>
                     <p class="text-gray-600 mb-4 text-sm">من أشهر الأسماء في عالم البن اليمني، تتميز بحباتها الدائرية الصغيرة.</p>
@@ -92,7 +102,7 @@
                         <li><strong>المعالجة:</strong> مجفف طبيعياً</li>
                     </ul>
                 </div>
-
+                <!-- نوع: مطري -->
                 <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-gold hover:shadow-xl transition">
                     <h3 class="text-2xl font-bold text-onyx mb-2">قهوة مطري (Matari)</h3>
                     <p class="text-gray-600 mb-4 text-sm">قهوة الملوك تاريخياً، توفر قاعدة شوكولاتية عميقة مع بهارات برية.</p>
@@ -102,7 +112,7 @@
                         <li><strong>المعالجة:</strong> مجفف طبيعياً</li>
                     </ul>
                 </div>
-
+                <!-- نوع: شبام -->
                 <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-gold hover:shadow-xl transition">
                     <h3 class="text-2xl font-bold text-onyx mb-2">قهوة شبام (Shibam)</h3>
                     <p class="text-gray-600 mb-4 text-sm">جوهرة مخفية تقدم قهوة متسقة للغاية بخصائص الفواكه المجففة.</p>
@@ -112,11 +122,11 @@
                         <li><strong>المعالجة:</strong> مجفف طبيعياً</li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </section>
 
+    <!-- قسم توريد الجملة (B2B Logistics) -->
     <section id="b2b" class="py-20 bg-onyx text-white">
         <div class="container mx-auto px-6 lg:flex lg:items-center lg:gap-12">
             <div class="lg:w-1/2 mb-10 lg:mb-0">
@@ -126,7 +136,8 @@
                     <li class="flex items-center gap-3"><span class="w-2 h-2 bg-gold rounded-full"></span> <strong>العينات (Samples):</strong> من 2 كجم إلى 5 كجم (لاختبارات الحمص والتذوق).</li>
                     <li class="flex items-center gap-3"><span class="w-2 h-2 bg-gold rounded-full"></span> <strong>الطلبات الصغرى (Micro-lots):</strong> من 20 كجم إلى 50 كجم للمحامص المتخصصة.</li>
                     <li class="flex items-center gap-3"><span class="w-2 h-2 bg-gold rounded-full"></span> <strong>طلبات الجملة (Bulk):</strong> 100 كجم فأكثر للحاويات التجارية.</li>
-                    <li class="flex items-center gap-3"><span class="w-2 h-2 bg-gold rounded-full"></span> <strong>الشحن:</strong> يتوفر شحن جوي للطلبات العاجلة وشحن بحري للكميات الكبيرة.</li>
+                    <!-- تم التعديل هنا بناء على طلبك -->
+                    <li class="flex items-center gap-3"><span class="w-2 h-2 bg-gold rounded-full"></span> <strong>الشحن:</strong> شحن بري من اليمن إلى السعودية.</li>
                 </ul>
             </div>
             <div class="lg:w-1/2 bg-espresso p-8 rounded-lg border border-gray-700 shadow-2xl text-center">
@@ -137,25 +148,45 @@
         </div>
     </section>
 
+    <!-- قسم المنشورات والأخبار (Posts Section) -->
+    <section id="posts" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-espresso mb-12">أحدث المنشورات والأخبار</h2>
+            
+            <!-- بداية المنشور -->
+            <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md border-r-4 border-gold mb-8">
+                <span class="text-gold font-bold text-sm">تحديث جديد</span>
+                <h3 class="text-2xl font-bold text-onyx mt-2 mb-4">عنوان المنشور هنا (مثال: وصول محصول حراز الجديد)</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    هنا يمكنك كتابة تفاصيل المنشور، الأخبار، أو العروض التي ترغب بمشاركتها مع عملائك. يمكنك تعديل هذا النص في أي وقت من خلال ملف الكود.
+                </p>
+                <!-- لإضافة صورة للمنشور، احذف العلامات من حول السطر التالي وضع اسم صورتك -->
+                <!-- <img src="post-image.jpg" alt="صورة المنشور" class="w-full h-64 object-cover rounded mt-4"> -->
+            </div>
+            <!-- نهاية المنشور -->
+            
+            <!-- يمكنك نسخ الجزء من "بداية المنشور" إلى "نهاية المنشور" ولصقه مرة أخرى لإضافة منشور جديد تحته -->
+        </div>
+    </section>
+
+    <!-- قسم القصة (Our Story) -->
     <section id="story" class="py-20 bg-offwhite">
         <div class="container mx-auto px-6 text-center max-w-4xl">
             <h2 class="text-4xl font-bold text-espresso mb-6">قصتنا: إرث زراعي يمتد لقرون</h2>
             <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                البن اليمني ليس مجرد محصول، بل هو جينات القهوة الأصلية (Arabica Typica). يُزرع البن في مدرجات جبلية شاهقة تصل لارتفاع 2500 متر. نقوم بدعم المزارعين المحليين عبر التجارة المباشرة (Direct Trade)، لضمان حصولهم على أجور عادلة تشجعهم على الاستمرار. 
+                البن اليمني ليس مجرد محصول، بل هو جينات القهوة الأصلية. يُزرع البن في مدرجات جبلية شاهقة تصل لارتفاع 2500 متر.
             </p>
             <p class="text-lg text-gray-700 leading-relaxed">
-                يتم قطف الكرز الأحمر يدوياً فقط، وتجفيفه تحت أشعة الشمس على أسرة مرتفعة لأسابيع لضمان امتصاص حبة البن لسكريات القشرة، مما يمنح البن اليمني تعقيده النكهي الفريد الذي لا مثيل له في العالم.
+                يتم قطف الكرز الأحمر يدوياً وتجفيفه تحت أشعة الشمس لأسابيع لضمان امتصاص حبة البن لسكريات القشرة، مما يمنحه تعقيده النكهي الفريد.
             </p>
         </div>
     </section>
 
+    <!-- قسم التواصل وطلب العينات -->
     <section id="contact" class="py-20 bg-gray-200">
         <div class="container mx-auto px-6 lg:flex lg:gap-12">
-            
             <div class="lg:w-1/3 bg-onyx text-white p-8 rounded-lg shadow-lg mb-10 lg:mb-0">
-                <h3 class="text-3xl font-bold text-gold mb-6">تواصل معنا المبيعات</h3>
-                <p class="text-gray-300 mb-8 text-sm">نحن متاحون للرد على استفسارات المستوردين والمحامص على مدار الأسبوع.</p>
-                
+                <h3 class="text-3xl font-bold text-gold mb-6">تواصل معنا</h3>
                 <div class="space-y-6">
                     <div class="flex items-center gap-4">
                         <div class="w-12 h-12 bg-espresso flex items-center justify-center rounded-full text-gold font-bold">✉</div>
@@ -164,21 +195,20 @@
                             <a href="mailto:itlobni@gmail.com" class="font-bold hover:text-gold transition">itlobni@gmail.com</a>
                         </div>
                     </div>
-                    
                     <div class="flex items-center gap-4">
                         <div class="w-12 h-12 bg-espresso flex items-center justify-center rounded-full text-gold font-bold">☏</div>
                         <div>
-                            <p class="text-sm text-gray-400">رقم الهاتف / واتساب</p>
+                            <p class="text-sm text-gray-400">واتساب</p>
                             <p class="font-bold" dir="ltr">+90 539 478 09 30</p>
                         </div>
                     </div>
                 </div>
-
                 <div class="mt-10">
-                    <a href="https://wa.me/905394780930" target="_blank" class="block w-full text-center bg-green-600 text-white px-6 py-3 font-bold rounded hover:bg-green-500 transition shadow-lg">تواصل معنا عبر WhatsApp</a>
+                    <a href="https://wa.me/905394780930" target="_blank" class="block w-full text-center bg-green-600 text-white px-6 py-3 font-bold rounded hover:bg-green-500 transition shadow-lg">تواصل عبر WhatsApp</a>
                 </div>
             </div>
 
+            <!-- نموذج الطلب -->
             <div class="lg:w-2/3 bg-white p-8 rounded-lg shadow-lg border-t-4 border-gold">
                 <h3 class="text-2xl font-bold text-espresso mb-6">طلب عينة / تسعيرة الجملة</h3>
                 <form action="mailto:itlobni@gmail.com" method="POST" enctype="text-plain" class="space-y-6">
@@ -192,55 +222,24 @@
                             <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-gold bg-gray-50" required>
                         </div>
                     </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-sm font-bold text-gray-700 mb-2">البريد الإلكتروني</label>
-                            <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-gold bg-gray-50" required>
-                        </div>
-                        <div>
-                            <label class="block text-sm font-bold text-gray-700 mb-2">الدولة / ميناء الوصول</label>
-                            <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-gold bg-gray-50" required>
-                        </div>
-                    </div>
-
                     <div>
-                        <label class="block text-sm font-bold text-gray-700 mb-2">نوع الاهتمام (اختر المحاصيل)</label>
-                        <div class="flex flex-wrap gap-4 text-sm text-gray-700">
-                            <label class="flex items-center gap-2"><input type="checkbox" class="accent-gold"> حراز</label>
-                            <label class="flex items-center gap-2"><input type="checkbox" class="accent-gold"> يافع</label>
-                            <label class="flex items-center gap-2"><input type="checkbox" class="accent-gold"> إسماعيلي</label>
-                            <label class="flex items-center gap-2"><input type="checkbox" class="accent-gold"> مطري</label>
-                            <label class="flex items-center gap-2"><input type="checkbox" class="accent-gold"> شبام</label>
-                        </div>
-                    </div>
-
-                    <div>
-                        <label class="block text-sm font-bold text-gray-700 mb-2">الكمية المطلوبة (تقريبياً)</label>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">الكمية المطلوبة</label>
                         <select class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-gold bg-gray-50">
                             <option>عينة للتذوق (2 كجم - 5 كجم)</option>
                             <option>طلبية صغرى (20 كجم - 50 كجم)</option>
                             <option>طلبية جملة (100 كجم - 500 كجم)</option>
-                            <option>حاوية / كميات كبيرة (+500 كجم)</option>
                         </select>
                     </div>
-
-                    <div>
-                        <label class="block text-sm font-bold text-gray-700 mb-2">تفاصيل إضافية / رسالتك</label>
-                        <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-gold bg-gray-50"></textarea>
-                    </div>
-
                     <button type="submit" class="bg-onyx text-gold px-8 py-3 font-bold text-lg rounded hover:bg-espresso transition w-full shadow-md">إرسال الطلب</button>
                 </form>
             </div>
         </div>
     </section>
 
+    <!-- تذييل الموقع (Footer) -->
     <footer class="bg-onyx text-center py-6 border-t border-gray-800">
         <p class="text-gray-400 text-sm">© 2024 Yemen Coffee B2B Direct Supply. All rights reserved.</p>
     </footer>
 
 </body>
 </html>
-
-```
