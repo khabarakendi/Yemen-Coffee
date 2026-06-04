@@ -1,4 +1,12 @@
+أعتذر عن أي التباس. سأقوم الآن بإرسال الكودين بالكامل من السطر الأول `<!DOCTYPE html>` وحتى السطر الأخير `</html>`.
 
+يرجى التأكد من استخدام زر "نسخ" (Copy) الموجود في أعلى مربع الكود لضمان نسخ كافة الأسطر دون أي نقص.
+
+### الملف الأول: الصفحة الرئيسية `index.html`
+
+انسخ هذا الكود بالكامل وضعه في ملف `index.html`:
+
+```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl" style="scroll-behavior: smooth;">
 <head>
@@ -28,7 +36,7 @@
 </head>
 <body class="font-sans bg-offwhite text-onyx selection:bg-gold selection:text-onyx">
 
-    <!-- شريط التواصل العلوي (تم استعادته) -->
+    <!-- شريط التواصل العلوي -->
     <div class="bg-onyx text-white py-2 text-sm text-center">
         <span>للتواصل المباشر مع المبيعات:</span>
         <a href="https://wa.me/905394780930" class="text-gold font-bold mx-2" target="_blank">00905394780930</a> | 
@@ -39,7 +47,6 @@
     <nav class="bg-espresso text-white sticky top-0 z-50 shadow-lg">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             
-            <!-- الشعار النصي الفاخر -->
             <a href="index.html" class="flex items-center gap-3">
                 <div class="text-3xl font-serif font-bold text-gold tracking-widest mt-1">Edrisi</div>
                 <div class="text-sm font-medium text-gray-300 border-r-2 border-gold pr-3 mr-1 leading-tight">
@@ -52,14 +59,13 @@
                 <a href="#story" class="hover:text-gold transition">قصتنا</a>
                 <a href="varieties.html" class="hover:text-gold transition">المحاصيل والتفاصيل</a>
                 <a href="#b2b" class="hover:text-gold transition">توريد الجملة</a>
-                <!-- قسم المنشورات تم استعادته -->
                 <a href="#posts" class="hover:text-gold transition">آخر الأخبار</a>
             </div>
             <a href="#contact" class="bg-gold text-onyx px-5 py-2 font-bold rounded hover:bg-white transition hidden md:block">طلب عينة</a>
         </div>
     </nav>
 
-    <!-- قسم البطل (Hero Section) -->
+    <!-- قسم البطل -->
     <header id="home" class="relative bg-cover bg-center h-[90vh] flex items-center" style="background-image: url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
         <div class="absolute inset-0 bg-onyx bg-opacity-70"></div>
         <div class="relative container mx-auto px-6 z-10 text-white">
@@ -73,7 +79,7 @@
         </div>
     </header>
 
-    <!-- قسم القصة (مختصر) -->
+    <!-- قسم القصة -->
     <section id="story" class="py-24 bg-white">
         <div class="container mx-auto px-6 max-w-5xl text-center">
             <h2 class="text-4xl font-bold text-espresso mb-6">قصتنا: إرث زراعي يمتد لقرون</h2>
@@ -87,11 +93,11 @@
         </div>
     </section>
 
-    <!-- قسم المحاصيل كبوابات (تم استعادته) -->
+    <!-- قسم المحاصيل المختصر -->
     <section class="py-24 bg-offwhite">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-4xl font-bold text-espresso mb-12">اخترنا لكم أفضل المحاصيل</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
                 
                 <div class="bg-white p-8 rounded-lg shadow border-t-4 border-gold">
                     <h3 class="text-2xl font-bold text-onyx mb-3">الحرازي</h3>
@@ -110,16 +116,29 @@
                     <p class="text-gray-600 mb-6">أحد أندر الأنواع بحبات البازلاء الصغيرة، بنكهات فاكهية نادرة.</p>
                     <a href="varieties.html#ismaili" class="text-gold font-bold hover:text-espresso transition">اقرأ الشرح المفصل ←</a>
                 </div>
+
+                <div class="bg-white p-8 rounded-lg shadow border-t-4 border-gold">
+                    <h3 class="text-2xl font-bold text-onyx mb-3">المطري</h3>
+                    <p class="text-gray-600 mb-6">قاعدة شوكولاتية عميقة مع بهارات برية ونبيذ أحمر، التعريف الأصيل لـ Mocha.</p>
+                    <a href="varieties.html#matari" class="text-gold font-bold hover:text-espresso transition">اقرأ الشرح المفصل ←</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow border-t-4 border-gold">
+                    <h3 class="text-2xl font-bold text-onyx mb-3">اليافعي</h3>
+                    <p class="text-gray-600 mb-6">يتميز بطابع كلاسيكي دافئ وحلاوة العسل مع قوام شرابي ثقيل.</p>
+                    <a href="varieties.html#yafai" class="text-gold font-bold hover:text-espresso transition">اقرأ الشرح المفصل ←</a>
+                </div>
+
             </div>
             <div class="mt-12">
-                <a href="varieties.html" class="inline-block bg-espresso text-white px-8 py-3 rounded font-bold hover:bg-gold transition">عرض كل الأنواع بالشرح المفصل مع الصور</a>
+                <a href="varieties.html" class="inline-block bg-espresso text-white px-8 py-3 rounded font-bold hover:bg-gold transition shadow-md">عرض كل الأنواع بالشرح المفصل مع الصور</a>
             </div>
         </div>
     </section>
 
-    <!-- قسم توريد الجملة (B2B Logistics) -->
+    <!-- قسم توريد الجملة -->
     <section id="b2b" class="py-24 bg-onyx text-white">
-        <div class="container mx-auto px-6 lg:flex lg:items-center lg:gap-12 max-w-6xl">
+        <div class="container mx-auto px-6 lg:flex lg:items-center lg:gap-12 max-w-7xl">
             <div class="lg:w-1/2 mb-10 lg:mb-0">
                 <h2 class="text-4xl font-bold text-gold mb-8">لوجستيات وتوريد الجملة (B2B)</h2>
                 <p class="text-lg text-gray-300 mb-8 leading-relaxed">نحن نفهم احتياجات مديري المشتريات والمحامص المختصة. نضمن لك الشفافية في المعالجة، الجودة الثابتة، وسهولة الإجراءات وتخليص الجمارك.</p>
@@ -138,11 +157,10 @@
         </div>
     </section>
 
-    <!-- قسم المنشورات والأخبار (تم استعادته) -->
+    <!-- قسم الأخبار -->
     <section id="posts" class="py-24 bg-gray-100">
         <div class="container mx-auto px-6 max-w-5xl">
             <h2 class="text-4xl font-bold text-center text-espresso mb-16">أحدث المنشورات والأخبار</h2>
-            
             <div class="bg-white p-10 rounded-lg shadow-md border-r-4 border-gold mb-8">
                 <span class="text-gold font-bold text-sm tracking-widest uppercase">تحديث جديد</span>
                 <h3 class="text-2xl font-bold text-onyx mt-3 mb-4">عنوان المنشور هنا (مثال: وصول محصول حراز الجديد)</h3>
@@ -185,16 +203,16 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>
                             <label class="block text-sm font-bold text-gray-700 mb-3">الاسم بالكامل</label>
-                            <input type="text" id="wa_name" class="w-full px-5 py-3 border border-gray-300 rounded focus:border-gold bg-gray-50 text-lg" required>
+                            <input type="text" id="wa_name" class="w-full px-5 py-3 border border-gray-300 rounded focus:outline-none focus:border-gold bg-gray-50 text-lg" required>
                         </div>
                         <div>
                             <label class="block text-sm font-bold text-gray-700 mb-3">اسم الشركة / المحمصة</label>
-                            <input type="text" id="wa_company" class="w-full px-5 py-3 border border-gray-300 rounded focus:border-gold bg-gray-50 text-lg" required>
+                            <input type="text" id="wa_company" class="w-full px-5 py-3 border border-gray-300 rounded focus:outline-none focus:border-gold bg-gray-50 text-lg" required>
                         </div>
                     </div>
                     <div>
                         <label class="block text-sm font-bold text-gray-700 mb-3">الكمية المطلوبة</label>
-                        <select id="wa_quantity" class="w-full px-5 py-3 border border-gray-300 rounded focus:border-gold bg-gray-50 text-lg">
+                        <select id="wa_quantity" class="w-full px-5 py-3 border border-gray-300 rounded focus:outline-none focus:border-gold bg-gray-50 text-lg">
                             <option value="عينة للتذوق (100 جم - 150 جم)">عينة للتذوق (100 جم - 150 جم)</option>
                             <option value="طلبية صغرى (20 كجم - 50 كجم)">طلبية صغرى (20 كجم - 50 كجم)</option>
                             <option value="طلبية جملة (100 كجم - 500 كجم)">طلبية جملة (100 كجم - 500 كجم)</option>
@@ -228,10 +246,9 @@
 
 ---
 
-### 2. الكود الشامل لصفحة المحاصيل والشروحات (`varieties.html`)
+### الملف الثاني: صفحة التفاصيل والصور `varieties.html`
 
-*(تمت استعادة الشريط العلوي، القائمة المنسدلة الكاملة للتنقل، تحديث صور الإسماعيلي والحرازي لتعمل 100%، وتم إضافة نموذج الطلب والاتصال أسفل الصفحة لتسهيل الطلب).*
-قم بنسخ هذا الكود واستبدال محتوى ملف `varieties.html` به:
+انسخ هذا الكود بالكامل وضعه في ملف اسمه بالضبط `varieties.html` (حروف صغيرة وبدون مسافات لتجنب خطأ 404):
 
 ```html
 <!DOCTYPE html>
@@ -255,14 +272,14 @@
 </head>
 <body class="font-sans bg-white text-onyx selection:bg-gold selection:text-onyx">
 
-    <!-- شريط التواصل العلوي (تمت إضافته لصفحة المحاصيل لتوحيد الهوية) -->
+    <!-- شريط التواصل العلوي -->
     <div class="bg-onyx text-white py-2 text-sm text-center">
         <span>للتواصل المباشر مع المبيعات:</span>
         <a href="https://wa.me/905394780930" class="text-gold font-bold mx-2" target="_blank">00905394780930</a> | 
         <a href="mailto:itlobni@gmail.com" class="text-gold font-bold mx-2">itlobni@gmail.com</a>
     </div>
 
-    <!-- القائمة الرئيسية الكاملة -->
+    <!-- القائمة الرئيسية -->
     <nav class="bg-espresso text-white sticky top-0 z-50 shadow-lg">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-3">
@@ -272,10 +289,8 @@
                 </div>
             </a>
             <div class="hidden md:flex space-x-8 space-x-reverse font-medium items-center">
-                <a href="index.html" class="hover:text-gold transition">الرئيسية</a>
-                <a href="index.html#story" class="hover:text-gold transition">قصتنا</a>
+                <a href="index.html" class="hover:text-gold transition">العودة للرئيسية</a>
                 <a href="varieties.html" class="text-gold border-b-2 border-gold pb-1">المحاصيل والتفاصيل</a>
-                <a href="index.html#b2b" class="hover:text-gold transition">توريد الجملة</a>
             </div>
             <a href="#contact" class="bg-gold text-onyx px-5 py-2 font-bold rounded hover:bg-white transition hidden md:block">طلب عينة</a>
         </div>
@@ -287,8 +302,8 @@
         <p class="text-xl text-gray-300">أدق التفاصيل للبن اليمني الأصيل المخصص للمحامص</p>
     </section>
 
-    <!-- 1. البن الحرازي (تم تحديث الصورة) -->
-    <section id="harazi" class="py-20 bg-offwhite border-b border-gray-300">
+    <!-- 1. البن الحرازي -->
+    <section id="harazi" class="py-20 bg-offwhite border-b border-gray-300 pt-28 -mt-8">
         <div class="container mx-auto px-6 max-w-6xl">
             <h2 class="text-4xl font-bold text-espresso mb-4">البن الحرازي (Harazi Coffee)</h2>
             <div class="inline-block bg-gold text-onyx px-4 py-1 rounded font-bold text-sm mb-8">
@@ -297,8 +312,7 @@
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <div>
-                    <!-- صورة جديدة وتعمل بكفاءة -->
-                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="نبات البن والكرز" class="w-full h-80 object-cover rounded-lg shadow-md mb-6 border border-gray-300">
+                    <img src="https://images.unsplash.com/photo-1524484050239-01582236d3c0?auto=format&fit=crop&w=1000&q=80" alt="نبات البن والكرز" class="w-full h-80 object-cover rounded-lg shadow-md mb-6 border border-gray-300">
                     <h3 class="text-2xl font-bold text-onyx mb-4">السرد التاريخي والبيئي</h3>
                     <p class="text-lg text-gray-700 leading-relaxed mb-6">
                         تعتبر جبال حراز من أشهر معاقل زراعة القهوة المختصة في العالم. تتميز هذه المنطقة بتضاريسها شديدة الانحدار وقراها المحصنة التي تعانق السحاب. يعتمد المزارعون في حراز على مياه الأمطار والينابيع الطبيعية. نظراً لارتفاع المنطقة ونقاء هوائها، تنضج حبات البن ببطء شديد، مما ينتج حبات بن صلبة جداً وقادرة على تحمل درجات الحمص المتفاوتة.
@@ -318,7 +332,7 @@
     </section>
 
     <!-- 2. البن الخولاني -->
-    <section id="khawlani" class="py-20 bg-white border-b border-gray-300">
+    <section id="khawlani" class="py-20 bg-white border-b border-gray-300 pt-28 -mt-8">
         <div class="container mx-auto px-6 max-w-6xl">
             <h2 class="text-4xl font-bold text-espresso mb-4">البن الخولاني (Khawlani Coffee)</h2>
             <div class="inline-block bg-gold text-onyx px-4 py-1 rounded font-bold text-sm mb-8">
@@ -336,7 +350,7 @@
                     </ul>
                 </div>
                 <div class="order-1 lg:order-2">
-                    <img src="https://images.unsplash.com/photo-1611162458324-aae1eb4129a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="حبوب البن الخولاني" class="w-full h-80 object-cover rounded-lg shadow-md mb-6 border border-gray-300">
+                    <img src="https://images.unsplash.com/photo-1611162458324-aae1eb4129a4?auto=format&fit=crop&w=1000&q=80" alt="حبوب البن الخولاني" class="w-full h-80 object-cover rounded-lg shadow-md mb-6 border border-gray-300">
                     <h3 class="text-2xl font-bold text-onyx mb-4">السرد التاريخي والبيئي</h3>
                     <p class="text-lg text-gray-700 leading-relaxed mb-6">
                         تراث ثقافي إنساني مسجل ضمن قائمة اليونسكو. يتميز المزارعون في خولان بتقنيات خاصة في التظليل والتقليم، مما يمنح الشجرة بيئة مثالية لإنتاج ثمار تتسم بالتوازن المذهل. يحظى هذا النوع بطلب هائل في الأسواق الإقليمية، وبدأ الآن في غزو أسواق القهوة المختصة.
@@ -346,8 +360,8 @@
         </div>
     </section>
 
-    <!-- 3. البن الإسماعيلي (تم تحديث الصورة) -->
-    <section id="ismaili" class="py-20 bg-offwhite border-b border-gray-300">
+    <!-- 3. البن الإسماعيلي -->
+    <section id="ismaili" class="py-20 bg-offwhite border-b border-gray-300 pt-28 -mt-8">
         <div class="container mx-auto px-6 max-w-6xl">
             <h2 class="text-4xl font-bold text-espresso mb-4">البن الإسماعيلي (Ismaili Coffee)</h2>
             <div class="inline-block bg-gold text-onyx px-4 py-1 rounded font-bold text-sm mb-8">
@@ -356,8 +370,7 @@
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <div>
-                    <!-- صورة جديدة تعمل بكفاءة -->
-                    <img src="https://images.unsplash.com/photo-1524351199678-981f2df95cdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="قهوة إسماعيلي مختصة" class="w-full h-80 object-cover rounded-lg shadow-md mb-6 border border-gray-300">
+                    <img src="https://images.unsplash.com/photo-1587734195503-904fca47e0e9?auto=format&fit=crop&w=1000&q=80" alt="قهوة إسماعيلي مختصة" class="w-full h-80 object-cover rounded-lg shadow-md mb-6 border border-gray-300">
                     <h3 class="text-2xl font-bold text-onyx mb-4">السرد التاريخي والبيئي</h3>
                     <p class="text-lg text-gray-700 leading-relaxed mb-6">
                         يتميز بطفرة نباتية فريدة تجعل شكل الحبة مختلفاً؛ فهي صغيرة الحجم، دائرية، وتُشبه حبات البازلاء (Peaberry). هذا الصغر في الحجم يعني أن النكهات تتركز بشكل مكثف جداً داخل كل حبة. كميات الإنتاج السنوية محدودة للغاية، مما يجعله كنزاً حقيقياً للباحثين عن المحاصيل الدقيقة.
@@ -377,7 +390,7 @@
     </section>
 
     <!-- 4. البن المطري -->
-    <section id="matari" class="py-20 bg-white border-b border-gray-300">
+    <section id="matari" class="py-20 bg-white border-b border-gray-300 pt-28 -mt-8">
         <div class="container mx-auto px-6 max-w-6xl">
             <h2 class="text-4xl font-bold text-espresso mb-4">البن المطري (Matari Coffee)</h2>
             <div class="inline-block bg-gold text-onyx px-4 py-1 rounded font-bold text-sm mb-8">
@@ -395,7 +408,7 @@
                     </ul>
                 </div>
                 <div class="order-1 lg:order-2">
-                    <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="بن مطري محمص" class="w-full h-80 object-cover rounded-lg shadow-md mb-6 border border-gray-300">
+                    <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?auto=format&fit=crop&w=1000&q=80" alt="بن مطري محمص" class="w-full h-80 object-cover rounded-lg shadow-md mb-6 border border-gray-300">
                     <h3 class="text-2xl font-bold text-onyx mb-4">السرد التاريخي والبيئي</h3>
                     <p class="text-lg text-gray-700 leading-relaxed mb-6">
                         قهوة الملوك تاريخياً، والتعريف الكلاسيكي لطعم الـ "Mocha" الأصيل. يتميز مناخ بني مطر بالبرودة والضباب الكثيف الذي يغطي المدرجات، مما يمنح البن المطري شخصية قوية ونكهة "ترابية" برية لا يمكن نسيانها.
@@ -406,7 +419,7 @@
     </section>
 
     <!-- 5. البن اليافعي -->
-    <section id="yafai" class="py-20 bg-offwhite border-b border-gray-300">
+    <section id="yafai" class="py-20 bg-offwhite border-b border-gray-300 pt-28 -mt-8">
         <div class="container mx-auto px-6 max-w-6xl">
             <h2 class="text-4xl font-bold text-espresso mb-4">البن اليافعي (Yafai Coffee)</h2>
             <div class="inline-block bg-gold text-onyx px-4 py-1 rounded font-bold text-sm mb-8">
@@ -415,7 +428,7 @@
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <div>
-                    <img src="https://images.unsplash.com/photo-1524350876685-274059332603?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="حصاد البن اليافعي" class="w-full h-80 object-cover rounded-lg shadow-md mb-6 border border-gray-300">
+                    <img src="https://images.unsplash.com/photo-1524350876685-274059332603?auto=format&fit=crop&w=1000&q=80" alt="حصاد البن اليافعي" class="w-full h-80 object-cover rounded-lg shadow-md mb-6 border border-gray-300">
                     <h3 class="text-2xl font-bold text-onyx mb-4">السرد التاريخي والبيئي</h3>
                     <p class="text-lg text-gray-700 leading-relaxed mb-6">
                         تتميز جبال يافع بطبيعتها الجيولوجية القاسية. تُسقى مدرجات البن اليافعي بالاعتماد الكلي على مياه الأمطار الموسمية والغيوم الملامسة للقمم. ينتج عن هذه البيئة بن ذو طابع كلاسيكي دافئ، يبتعد قليلاً عن الحموضة الفاكهية ليقدم كوباً يتميز بالحلاوة والعمق المريح.
@@ -434,7 +447,7 @@
         </div>
     </section>
 
-    <!-- قسم التواصل وطلب العينات (تم إضافته لصفحة المحاصيل لتسهيل الشراء) -->
+    <!-- قسم التواصل وطلب العينات -->
     <section id="contact" class="py-24 bg-gray-200">
         <div class="container mx-auto px-6 lg:flex lg:gap-12 max-w-7xl">
             <div class="lg:w-1/3 bg-onyx text-white p-10 rounded-lg shadow-xl mb-10 lg:mb-0">
@@ -466,16 +479,16 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>
                             <label class="block text-sm font-bold text-gray-700 mb-3">الاسم بالكامل</label>
-                            <input type="text" id="wa_name" class="w-full px-5 py-3 border border-gray-300 rounded focus:border-gold bg-gray-50 text-lg" required>
+                            <input type="text" id="wa_name" class="w-full px-5 py-3 border border-gray-300 rounded focus:outline-none focus:border-gold bg-gray-50 text-lg" required>
                         </div>
                         <div>
                             <label class="block text-sm font-bold text-gray-700 mb-3">اسم الشركة / المحمصة</label>
-                            <input type="text" id="wa_company" class="w-full px-5 py-3 border border-gray-300 rounded focus:border-gold bg-gray-50 text-lg" required>
+                            <input type="text" id="wa_company" class="w-full px-5 py-3 border border-gray-300 rounded focus:outline-none focus:border-gold bg-gray-50 text-lg" required>
                         </div>
                     </div>
                     <div>
                         <label class="block text-sm font-bold text-gray-700 mb-3">الكمية المطلوبة</label>
-                        <select id="wa_quantity" class="w-full px-5 py-3 border border-gray-300 rounded focus:border-gold bg-gray-50 text-lg">
+                        <select id="wa_quantity" class="w-full px-5 py-3 border border-gray-300 rounded focus:outline-none focus:border-gold bg-gray-50 text-lg">
                             <option value="عينة للتذوق (100 جم - 150 جم)">عينة للتذوق (100 جم - 150 جم)</option>
                             <option value="طلبية صغرى (20 كجم - 50 كجم)">طلبية صغرى (20 كجم - 50 كجم)</option>
                             <option value="طلبية جملة (100 كجم - 500 كجم)">طلبية جملة (100 كجم - 500 كجم)</option>
@@ -492,6 +505,7 @@
         <p class="text-gray-400 text-sm">© 2026 Edrisi Coffee B2B Direct Supply. All rights reserved.</p>
     </footer>
 
+    <!-- سكربت إرسال الطلب -->
     <script>
         function sendToWhatsApp(event) {
             event.preventDefault();
